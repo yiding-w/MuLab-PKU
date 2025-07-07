@@ -13,7 +13,7 @@ sections:
         <div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
   
           <div style="flex: 1; min-width: 200px;">
-            <img src="/media/logo.png" alt="Logo" style="max-width: 100%; height: auto;">
+            <img src="/assets/media/logo.png" alt="Logo" style="max-width: 100%; height: auto;">
           </div>
   
           <div style="flex: 2; min-width: 250px;">
