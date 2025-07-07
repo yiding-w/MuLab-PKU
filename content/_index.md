@@ -14,7 +14,7 @@ sections:
   
         **Welcome to Muhan's Research Lab!**
     design:
-      columns: '1'
+      columns: '2'
       background:
         image: 
           filename: coders.jpg
@@ -25,7 +25,7 @@ sections:
           size: cover
           text_color_light: true
       spacing:
-        padding: ['20px', '0', '20px', '0']
+        padding: ['40px', '0', '40px', '0']
       css_class: fullscreen
   
   - block: markdown
