@@ -15,7 +15,7 @@ sections:
         <br>
         Welcome to Muhan's Research Lab!
   
-  - block markdown
+  - block: markdown
     content:
       title: Latest News
       subtitle: ''
