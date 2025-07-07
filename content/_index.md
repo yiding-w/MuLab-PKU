@@ -5,28 +5,23 @@ date: 2022-10-24
 type: landing
 
 sections:
-  - block: markdown
+  - block: feature
     content:
       title:
       subtitle:
-      text: |
-        <div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
-  
-          <div style="flex: 1; min-width: 200px;">
-            <img src="/assets/media/logo.png" alt="Logo" style="max-width: 100%; height: auto;">
-          </div>
-  
-          <div style="flex: 2; min-width: 250px;">
-            <p style="font-weight: bold; font-size: 1.5rem;">
-              Welcome to Muhan's Research Lab!
-            </p>
-          </div>
-  
-        </div>
+      features:
+        - icon:
+          icon_pack: ""
+          title: "**Welcome to Muhan's Research Lab!**"
+          description: ""
+          image:
+            filename: logo.png
+            alt_text: Lab logo
+          image_position: left
     design:
-      columns: '1'
+      columns: "2"
       spacing:
-        padding: ['40px', '0', '40px', '0']
+        padding: ["40px", "0", "40px", "0"]
   
   - block: markdown
     content:
