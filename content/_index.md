@@ -10,10 +10,12 @@ sections:
       title: |
         Μμ Lab
       image:
-        filename: welcome.jpg
+        filename: logo.png
       text: |
         <br>
         Welcome to Muhan's Research Lab!
+    design:
+      alignment: right
   
   - block: markdown
     content:
@@ -24,7 +26,7 @@ sections:
       columns: '2'
       background:
         gradient: false
-        color: gray
+        color: light
       spacing:
         padding: ['40px', '0', '40px', '0']
   
