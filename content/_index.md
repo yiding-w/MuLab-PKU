@@ -5,23 +5,28 @@ date: 2022-10-24
 type: landing
 
 sections:
-  - block: feature
+  - block: markdown
     content:
       title:
-      subtitle:
-      features:
-        - icon:
-          icon_pack: ""
-          title: "**Welcome to Muhan's Research Lab!**"
-          description: ""
-          image:
-            filename: logo.png
-            alt_text: Lab logo
-          image_position: left
+      subtitle: ''
+      text: |
+        ![](/media/logo.png)
+  
+        **Welcome to Muhan's Research Lab!**
     design:
-      columns: "2"
+      columns: '1'
+      background:
+        image: 
+          filename: coders.jpg
+          filters:
+            brightness: 1
+          parallax: false
+          position: center
+          size: cover
+          text_color_light: true
       spacing:
-        padding: ["40px", "0", "40px", "0"]
+        padding: ['20px', '0', '20px', '0']
+      css_class: fullscreen
   
   - block: markdown
     content:
