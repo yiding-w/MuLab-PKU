@@ -7,15 +7,12 @@ type: landing
 sections:
   - block: hero
     content:
-      title: |
-        Μμ Lab
+      title: 
       image:
         filename: logo.png
-      text: |
-        <br>
-        Welcome to Muhan's Research Lab!
+      text: Welcome to Muhan's Research Lab!
     design:
-      alignment: right
+      alignment: left
   
   - block: markdown
     content:
