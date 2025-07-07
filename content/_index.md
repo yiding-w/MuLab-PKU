@@ -13,27 +13,20 @@ sections:
         filename: welcome.jpg
       text: |
         <br>
-        
-        The **Wowchemy Research Group** has been a center of excellence for Artificial Intelligence research, teaching, and practice since its founding in 2016.
+        Welcome to Muhan's Research Lab!
   
-  - block: collection
+  - block markdown
     content:
       title: Latest News
-      subtitle:
-      text:
-      count: 5
-      filters:
-        author: ''
-        category: ''
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
-      offset: 0
-      order: desc
-      page_type: post
+      subtitle: ''
+      text: 05/2025 Μμ Lab has three papers accepted to ICML 2025.
     design:
-      view: card
-      columns: '1'
+      columns: '2'
+      background:
+        gradient: false
+        color: gray
+      spacing:
+        padding: ['40px', '0', '40px', '0']
   
   - block: markdown
     content:
