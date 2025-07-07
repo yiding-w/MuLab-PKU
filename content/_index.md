@@ -8,25 +8,25 @@ sections:
   - block: markdown
     content:
       title:
-      subtitle: ''
+      subtitle:
       text: |
-        ![](/media/logo.png)
+        <div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
   
-        **Welcome to Muhan's Research Lab!**
+          <div style="flex: 1; min-width: 200px;">
+            <img src="/assets/media/logo.png" alt="Logo" style="max-width: 100%; height: auto;">
+          </div>
+  
+          <div style="flex: 2; min-width: 250px;">
+            <p style="font-weight: bold; font-size: 1.5rem;">
+              Welcome to Muhan's Research Lab!
+            </p>
+          </div>
+  
+        </div>
     design:
-      columns: '2'
-      background:
-        image: 
-          filename: coders.jpg
-          filters:
-            brightness: 1
-          parallax: false
-          position: center
-          size: cover
-          text_color_light: true
+      columns: '1'
       spacing:
         padding: ['40px', '0', '40px', '0']
-      css_class: fullscreen
   
   - block: markdown
     content:
