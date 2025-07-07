@@ -8,9 +8,7 @@
 appearance:
   theme_day: minimal
   theme_night:
-  font:
-    heading: "'Lora', serif"
-    body: "'Inter', sans-serif"
+  font: native
   font_size: L
 
 # SEO
