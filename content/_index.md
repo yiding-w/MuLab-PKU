@@ -41,25 +41,46 @@ sections:
       spacing:
         padding: ['40px', '0', '40px', '0']
   
-  - block: markdown
+  - block: slider
     content:
-      title:
+      title: Our Lab
       subtitle: ''
-      text:
+      slides:
+        - title: Lab Group Photo 2024
+          content: Our research team working together
+          align: center
+          background:
+            image:
+              filename: welcome.jpg
+              filters:
+                brightness: 0.7
+            position: center
+            color: '#666'
+        - title: Research Activities
+          content: Collaborative research environment
+          align: center
+          background:
+            image:
+              filename: contact.jpg
+              filters:
+                brightness: 0.7
+            position: center
+            color: '#666'
+        - title: Team Collaboration
+          content: Working on cutting-edge AI research
+          align: center
+          background:
+            image:
+              filename: image3.png
+              filters:
+                brightness: 0.7
+            position: center
+            color: '#666'
     design:
-      columns: '1'
-      background:
-        image: 
-          filename: coders.jpg
-          filters:
-            brightness: 1
-          parallax: false
-          position: center
-          size: cover
-          text_color_light: true
-      spacing:
-        padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen
+      slide_height: '400px'
+      is_fullscreen: false
+      loop: true
+      interval: 5000
 
   - block: collection
     content:
