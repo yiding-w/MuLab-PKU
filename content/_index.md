@@ -85,28 +85,53 @@ sections:
   - block: markdown
     id: contact
     content:
-      title: Prospective Students
-      subtitle: 'Join Our Research Group'
+      title: Contact Us
+      subtitle: 'Join Our Research Community'
       text: |
-        <div style="font-size: 1rem; line-height: 1.7; color: #374151;">
-          <p>I am looking for <strong>highly motivated PhD/undergraduate students</strong> who are interested in doing graph ML research with me. Please shoot me an email if you meet at least three of the following criteria:</p>
+        <div style="font-size: 1rem; line-height: 1.8; color: #374151; max-width: 800px; margin: 0 auto;">
+          <p style="font-size: 1.1rem; color: #1f2937; margin-bottom: 2rem;"><strong>Thank you so much for your interest in our work!</strong></p>
           
-          <ul style="margin: 1.5rem 0; padding-left: 1.5rem;">
-            <li><strong>Creativity and passion for research</strong></li>
-            <li><strong>Solid math skills</strong></li> 
-            <li><strong>Solid coding skills</strong></li>
-            <li><strong>Good English</strong> (writing and speaking)</li>
-          </ul>
+          <p>We are actively looking for students and postdocs. MuLab welcomes applicants from diverse backgrounds. Students with backgrounds that are underrepresented or underserved in AI/ML are especially encouraged to apply.</p>
           
-          <p>I will do my best to provide support for your success, including <strong>detailed guidance</strong>, <strong>plenty of computation resources</strong>, and <strong>research freedom for senior PhDs</strong>.</p>
-          
-          <p>You are especially welcome if you have <strong>interdisciplinary backgrounds</strong> (such as maths/physics/chemistry/biology) while proficient in coding. For students in Peking University, you can schedule one-on-one chats with me at my office.</p>
-          
-          <div style="background: #fef3c7; padding: 1rem; border-radius: 0.5rem; margin: 1.5rem 0; border-left: 4px solid #f59e0b;">
-            <p style="margin: 0;"><strong>📧 Note:</strong> Due to the large number of applicants, the competition is intense every year and I may not be able to respond to every email. Hope you understand!</p>
+          <div style="margin: 2.5rem 0;">
+            <h3 style="color: #2563eb; font-size: 1.3rem; margin-bottom: 1rem; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem;">🎓 Prospective PhD Students</h3>
+            <p>We are always looking for strong PhD students with interests in <strong>Graph Machine Learning</strong> and <strong>Large Language Model Reasoning</strong>. Please do not email me regarding PhD admission as admission decisions are made by a committee.</p>
+            <p>If you are an admitted or current PhD student at PKU, please email Prof. Zhang directly. I am looking for students who meet at least three of the following criteria:</p>
+            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+              <li>Creativity and passion for research</li>
+              <li>Solid math skills</li>
+              <li>Solid coding skills</li>
+              <li>Good English (writing and speaking)</li>
+            </ul>
+            <p><strong>Location:</strong> I am mainly affiliated with the <strong>Institute for AI (人工智能研究院)</strong> at the main campus (燕园) of PKU. Your office will be there - no need to go to Changping campus.</p>
           </div>
           
-          <p><strong>For potential PhD students:</strong> I am mainly affiliated with the <strong>Institute for AI (人工智能研究院)</strong>, which is based in the main campus (燕园) of PKU. Your office will also be there and you don't need to go to the Changping (昌平) campus.</p>
+          <div style="margin: 2.5rem 0;">
+            <h3 style="color: #2563eb; font-size: 1.3rem; margin-bottom: 1rem; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem;">🔬 Prospective Postdocs</h3>
+            <p>We are currently looking for 1-2 postdocs. Applicants are expected to have a strong publication record in top-tier graph ML, NLP, and/or machine learning conferences. Please email Prof. Zhang with your CV and research statement.</p>
+          </div>
+          
+          <div style="margin: 2.5rem 0;">
+            <h3 style="color: #2563eb; font-size: 1.3rem; margin-bottom: 1rem; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem;">🎯 PKU Undergraduate and Masters Students</h3>
+            <p>We are happy to work with masters or undergraduate students at Peking University. We expect applicants to have some prior experience in ML/AI (prior research experience is not required), and a minimum of 10 hours per week commitment to research.</p>
+            <p>You are especially welcome if you have <strong>interdisciplinary backgrounds</strong> (such as maths/physics/chemistry/biology) while being proficient in coding. For PKU students, you can schedule one-on-one chats with me at my office.</p>
+          </div>
+          
+          <div style="margin: 2.5rem 0;">
+            <h3 style="color: #2563eb; font-size: 1.3rem; margin-bottom: 1rem; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem;">🌍 Visiting Students and Researchers</h3>
+            <p>We take visitors on a rolling basis, and generally prefer visitors to stay for at least 6 months for high-quality collaborative work. If you are interested in visiting our research lab, please email Prof. Zhang with your research interests and proposed duration.</p>
+          </div>
+          
+          <div style="background: #f3f4f6; padding: 2rem; border-radius: 0.75rem; margin: 2rem 0; border-left: 4px solid #3b82f6;">
+            <h4 style="color: #1f2937; margin-top: 0; margin-bottom: 1rem;">📧 Application Process</h4>
+            <p style="margin-bottom: 0.5rem;"><strong>Email:</strong> muhan@pku.edu.cn</p>
+            <p style="margin-bottom: 1rem;"><strong>Subject Line:</strong> [Application Type] - [Your Name] - [Your Institution]</p>
+            <p style="margin: 0; color: #6b7280;"><strong>Note:</strong> Due to the large number of applicants, competition is intense every year and I may not be able to respond to every email. Thank you for understanding!</p>
+          </div>
+          
+          <div style="margin: 2rem 0;">
+            <p><strong>What we offer:</strong> Detailed guidance, abundant computation resources, research freedom for senior students, and a collaborative environment dedicated to <em>revealing the intelligence behind graphs and reasoning</em>.</p>
+          </div>
         </div>
     design:
       columns: '1'
