@@ -37,9 +37,11 @@ education:
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 social:
+  - icon: "custom/homepage-svgrepo-com"
+    link: https://yiding-w.github.io
   - icon: envelope
     icon_pack: fas
-    link: '2200017439@pku.edu.cn'
+    link: 'mailto:2200017439@stu.pku.edu.cn'
   - icon: github
     icon_pack: fab
     link: https://github.com/yiding-w
