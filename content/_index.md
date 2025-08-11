@@ -58,7 +58,7 @@ sections:
       title: 'Our Photos'
       subtitle: ''
       slides:
-        - title: Team Building 2024
+        - title: Barbecue 2024
           align: center
           background:
             image:
@@ -67,7 +67,7 @@ sections:
                 brightness: 0.8
             position: center
             color: '#1e40af'
-        - title: Team Building 2025
+        - title: Party 2025
           align: center
           background:
             image:
