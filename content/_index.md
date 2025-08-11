@@ -93,8 +93,6 @@ sections:
           
           <p><strong>🎓 Prospective PhD Students:</strong> We are always looking for strong PhD students with interests in Graph Machine Learning and Large Language Model Reasoning. I am looking for students who meet at least three criteria: creativity and passion for research, solid math skills, solid coding skills, and good English. <em>Note: Please do not email regarding PhD admission as decisions are made by committee.</em></p>
           
-          <p><strong>🔬 Prospective Postdocs:</strong> We are currently looking for 1-2 postdocs. Applicants are expected to have a strong publication record in top-tier graph ML, NLP, and/or machine learning conferences. Please email Prof. Zhang with your CV and research statement.</p>
-          
           <p><strong>🎯 PKU Undergraduate and Masters Students:</strong> We are happy to work with masters or undergraduate students at Peking University. We expect some prior experience in ML/AI and a minimum of 10 hours per week commitment. You are especially welcome if you have interdisciplinary backgrounds while being proficient in coding.</p>
           
           <p><strong>🌍 Visiting Students and Researchers:</strong> We take visitors on a rolling basis, and generally prefer visitors to stay for at least 6 months for high-quality collaborative work. Please email Prof. Zhang with your research interests and proposed duration.</p>
