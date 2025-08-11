@@ -69,6 +69,6 @@ Yiding Wang is a junior undergraduate student at Peking University, majoring in 
 
 In general, my research interests lie in:
 
-** The revolution leads to the next generation of foundational models.
-** Adapting foundation models more effectively to the field of agents, aiming to construct agents with general intelligence（eg. social interaction, adaptive decision-making, long-horizon planning).
+1. The revolution leads to the next generation of foundational models.  
+2. Adapting foundation models more effectively to the field of agents, aiming to construct agents with general intelligence（eg. social interaction, adaptive decision-making, long-horizon planning).
 
