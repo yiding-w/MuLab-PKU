@@ -11,6 +11,11 @@ appearance:
   font: native
   font_size: L
 
+logo:
+  # Logo file in `assets/media/`
+  filename: 'row_LOGO.png'
+  # Text to show in site header instead of logo image
+  text: ''
 # SEO
 
 marketing:
@@ -35,7 +40,7 @@ header:
   navbar:
     enable: true
     align: r
-    show_logo: false
+    show_logo: true
     show_language: false
     show_day_night: true
     show_search: true
