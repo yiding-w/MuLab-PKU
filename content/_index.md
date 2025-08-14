@@ -57,7 +57,7 @@ sections:
           <div style="width: 1px; background-color: #d1d5db; margin: 0 2rem;"></div>
 
           <!-- Right Column: Large Language Models -->
-          <div style="flex: 1; min-width: 500px; max-width: 700px; padding: 1rem;">
+          <div style="flex: 1; min-width: 550px; max-width: 700px; padding: 1rem;">
             <div style="display: flex; align-items: center; margin-bottom: 1rem;">
               <span style="font-size: 2rem; margin-right: 0.8rem;">🤖</span>
               <h3 style="font-weight: 600; font-size: 1.5rem; color: #1f2937; margin: 0;">Large Language Models</h3>
