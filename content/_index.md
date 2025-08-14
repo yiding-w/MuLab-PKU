@@ -31,10 +31,10 @@ sections:
       columns: '1'
       spacing:
         padding: ['40px', '0', '40px', '0']
-        
+
   - block: markdown
     content:
-      title:
+      title: Research Interests
       subtitle:
       text: |
         <div style="display: flex; gap: 4rem; align-items: flex-start; flex-wrap: wrap;">
