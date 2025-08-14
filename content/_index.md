@@ -34,8 +34,8 @@ sections:
 
   - block: markdown
     content:
-      title: Research Interests
-      subtitle:
+      title: ""
+      subtitle: ""
       text: |
         <div style="display: flex; gap: 4rem; align-items: flex-start; flex-wrap: wrap;">
           
