@@ -34,43 +34,27 @@ sections:
 
   - block: markdown
     content:
-      title: ""
+      title: "Research Interests"
       subtitle: ""
       text: |
-        <div style="display: flex; gap: 4rem; align-items: flex-start; flex-wrap: wrap;">
-          
-          <!-- 左侧标题 -->
-          <div style="flex: 0 0 250px; min-width: 200px;">
-            <h2 style="font-weight: bold; font-size: 2rem; color: #1f2937; margin: 0;">Research Interests</h2>
+        <div style="margin-bottom: 3rem;">
+          <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <span style="font-size: 1.5rem; margin-right: 0.8rem;">🔗</span>
+            <h3 style="font-weight: 600; font-size: 1.3rem; color: #1f2937; margin: 0;">Graph Machine Learning</h3>
           </div>
-          
-          <!-- 右侧内容 -->
-          <div style="flex: 1; min-width: 400px;">
-            
-            <!-- Graph Machine Learning -->
-            <div style="margin-bottom: 3rem;">
-              <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-                <span style="font-size: 1.5rem; margin-right: 0.8rem;">🔗</span>
-                <h3 style="font-weight: 600; font-size: 1.3rem; color: #1f2937; margin: 0;">Graph Machine Learning</h3>
-              </div>
-              <p style="color: #4b5563; margin: 0; line-height: 1.7;">
-                Many real-world problems are inherently graph-structured, e.g., social networks, biological networks, World Wide Web, molecules, circuits, brain, road networks, knowledge graphs. Many machine learning algorithms are also defined on graphs, such as neural networks and graphical models. In this field, we develop algorithms and theories for learning over graphs, and apply them to problems like link prediction, graph classification, graph structure optimization, and knowledge graph reasoning. We are also interested in practical applications of graph neural networks, including brain modeling, drug discovery, circuit design, and healthcare applications.
-              </p>
-            </div>
-            
-            <!-- Large Language Models -->
-            <div>
-              <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-                <span style="font-size: 1.5rem; margin-right: 0.8rem;">🤖</span>
-                <h3 style="font-weight: 600; font-size: 1.3rem; color: #1f2937; margin: 0;">Large Language Models</h3>
-              </div>
-              <p style="color: #4b5563; margin: 0; line-height: 1.7;">
-                Compared to machine, human posesses extreme flexibility in handling unseen tasks in a few-shot/zero-shot way, much of which is attributed to human's system-II intelligence for complex logical reasoning, task planning, causal reasoning, and inductive generalization. Large language models (LLMs) have shown unprecedented improvement on such abilities, while still fail in some top-human-level tasks, such as scientific innovation, software engineering, super-long writing, autonomous agents, etc. In this field, we aim to 1) design next-generation LLM architectures with long-term memory, human-like learning mechanisms, fast training/inference, and superior long-context abilities, 2) understand and improve LLMs' reasoning ability, ultimately matching or outperforming human on the most challenging tasks, and 3) explore LLMs' integration with other modalities, such as graph, code, relational database (RDB), image, video, etc.
-              </p>
-            </div>
-            
+          <p style="color: #4b5563; margin: 0; line-height: 1.7;">
+            Many real-world problems are inherently graph-structured, e.g., social networks, biological networks, World Wide Web, molecules, circuits, brain, road networks, knowledge graphs. Many machine learning algorithms are also defined on graphs, such as neural networks and graphical models. In this field, we develop algorithms and theories for learning over graphs, and apply them to problems like link prediction, graph classification, graph structure optimization, and knowledge graph reasoning. We are also interested in practical applications of graph neural networks, including brain modeling, drug discovery, circuit design, and healthcare applications.
+          </p>
+        </div>
+        
+        <div>
+          <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <span style="font-size: 1.5rem; margin-right: 0.8rem;">🤖</span>
+            <h3 style="font-weight: 600; font-size: 1.3rem; color: #1f2937; margin: 0;">Large Language Models</h3>
           </div>
-          
+          <p style="color: #4b5563; margin: 0; line-height: 1.7;">
+            Compared to machine, human posesses extreme flexibility in handling unseen tasks in a few-shot/zero-shot way, much of which is attributed to human's system-II intelligence for complex logical reasoning, task planning, causal reasoning, and inductive generalization. Large language models (LLMs) have shown unprecedented improvement on such abilities, while still fail in some top-human-level tasks, such as scientific innovation, software engineering, super-long writing, autonomous agents, etc. In this field, we aim to 1) design next-generation LLM architectures with long-term memory, human-like learning mechanisms, fast training/inference, and superior long-context abilities, 2) understand and improve LLMs' reasoning ability, ultimately matching or outperforming human on the most challenging tasks, and 3) explore LLMs' integration with other modalities, such as graph, code, relational database (RDB), image, video, etc.
+          </p>
         </div>
     design:
       columns: '2'
