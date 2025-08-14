@@ -73,7 +73,7 @@ sections:
           
         </div>
     design:
-      columns: '1'
+      columns: '2'
       background:
         gradient: false
         color: light
