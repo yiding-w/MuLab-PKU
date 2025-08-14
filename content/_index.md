@@ -32,6 +32,7 @@ sections:
       spacing:
         padding: ['40px', '0', '40px', '0']
 
+
   - block: markdown
     content:
       subtitle: ""
@@ -42,7 +43,7 @@ sections:
 
         <div style="display: flex; justify-content: space-between; gap: 2rem; margin-bottom: 3rem;">
           <!-- Left Column: Graph Machine Learning -->
-          <div style="flex: 1; min-width: 350px; padding: 1rem;">
+          <div style="flex: 1; min-width: 450px; max-width: 600px; padding: 1rem;">
             <div style="display: flex; align-items: center; margin-bottom: 1rem;">
               <span style="font-size: 2rem; margin-right: 0.8rem;">🔗</span>
               <h3 style="font-weight: 600; font-size: 1.5rem; color: #1f2937; margin: 0;">Graph Machine Learning</h3>
@@ -56,7 +57,7 @@ sections:
           <div style="width: 1px; background-color: #d1d5db; margin: 0 2rem;"></div>
 
           <!-- Right Column: Large Language Models -->
-          <div style="flex: 1; min-width: 350px; padding: 1rem;">
+          <div style="flex: 1; min-width: 450px; max-width: 600px; padding: 1rem;">
             <div style="display: flex; align-items: center; margin-bottom: 1rem;">
               <span style="font-size: 2rem; margin-right: 0.8rem;">🤖</span>
               <h3 style="font-weight: 600; font-size: 1.5rem; color: #1f2937; margin: 0;">Large Language Models</h3>
