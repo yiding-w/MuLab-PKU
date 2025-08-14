@@ -41,9 +41,9 @@ sections:
           <h2 style="font-size: 2rem; font-weight: 600; color: #1f2937; margin: 0;">Research Interests</h2>
         </div>
 
-        <div style="display: flex; justify-content: space-between; gap: 2rem; margin-bottom: 3rem;">
+        <div style="display: flex; justify-content: space-evenly; align-items: flex-start; gap: 2rem; margin-bottom: 3rem; max-width: 1400px; margin-left: auto; margin-right: auto;">
           <!-- Left Column: Graph Machine Learning -->
-          <div style="flex: 1; min-width: 450px; max-width: 600px; padding: 1rem;">
+          <div style="flex: 1; min-width: 500px; max-width: 700px; padding: 1rem;">
             <div style="display: flex; align-items: center; margin-bottom: 1rem;">
               <span style="font-size: 2rem; margin-right: 0.8rem;">🔗</span>
               <h3 style="font-weight: 600; font-size: 1.5rem; color: #1f2937; margin: 0;">Graph Machine Learning</h3>
@@ -57,17 +57,20 @@ sections:
           <div style="width: 1px; background-color: #d1d5db; margin: 0 2rem;"></div>
 
           <!-- Right Column: Large Language Models -->
-          <div style="flex: 1; min-width: 450px; max-width: 600px; padding: 1rem;">
+          <div style="flex: 1; min-width: 500px; max-width: 700px; padding: 1rem;">
             <div style="display: flex; align-items: center; margin-bottom: 1rem;">
               <span style="font-size: 2rem; margin-right: 0.8rem;">🤖</span>
               <h3 style="font-weight: 600; font-size: 1.5rem; color: #1f2937; margin: 0;">Large Language Models</h3>
             </div>
             <p style="color: #4b5563; line-height: 1.7;">
               Compared to machines, humans possess extreme flexibility in handling unseen tasks in a few-shot/zero-shot way, much of which is attributed to human system-II intelligence for complex logical reasoning, task planning, causal reasoning, and inductive generalization. Large language models (LLMs) have shown unprecedented improvement in such abilities, but still face challenges in top human-level tasks, such as scientific innovation, software engineering, long-form writing, and autonomous agents. In this field, we aim to:
+            </p>
+            <p style="color: #4b5563; line-height: 1.7;">
+              <strong>a)</strong> Design next-generation LLM architectures with long-term memory, human-like learning mechanisms, fast training/inference, and superior long-context abilities.  
               <br><br>
-              - Design next-generation LLM architectures with long-term memory, human-like learning mechanisms, fast training/inference, and superior long-context abilities.  
-              - Improve LLMs' reasoning ability to match or surpass humans in the most complex tasks.  
-              - Explore LLMs' integration with various modalities, such as graphs, code, relational databases (RDB), images, and videos.
+              <strong>b)</strong> Improve LLMs' reasoning ability to match or surpass humans in the most complex tasks.  
+              <br><br>
+              <strong>c)</strong> Explore LLMs' integration with various modalities, such as graphs, code, relational databases (RDB), images, and videos.
             </p>
           </div>
         </div>
