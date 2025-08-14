@@ -31,32 +31,44 @@ sections:
       columns: '1'
       spacing:
         padding: ['40px', '0', '40px', '0']
-
+        
   - block: markdown
     content:
-      title: Research Interests
-      subtitle: ''
+      title:
+      subtitle:
       text: |
-        <div style="display: flex; gap: 3rem; flex-wrap: wrap; font-size: 1rem; line-height: 1.8;">
+        <div style="display: flex; gap: 4rem; align-items: flex-start; flex-wrap: wrap;">
           
-          <div style="flex: 1; min-width: 300px; padding: 2rem; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); border-radius: 12px; border-left: 4px solid #3b82f6;">
-            <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
-              <span style="font-size: 2rem; margin-right: 1rem;">🔗</span>
-              <h3 style="font-weight: bold; font-size: 1.4rem; color: #1e293b; margin: 0;">Graph Machine Learning</h3>
-            </div>
-            <p style="color: #475569; margin: 0;">
-              Many real-world problems are inherently graph-structured, e.g., social networks, biological networks, World Wide Web, molecules, circuits, brain, road networks, knowledge graphs. Many machine learning algorithms are also defined on graphs, such as neural networks and graphical models. In this field, we develop algorithms and theories for learning over graphs, and apply them to problems like link prediction, graph classification, graph structure optimization, and knowledge graph reasoning. We are also interested in practical applications of graph neural networks, including brain modeling, drug discovery, circuit design, and healthcare applications.
-            </p>
+          <!-- 左侧标题 -->
+          <div style="flex: 0 0 250px; min-width: 200px;">
+            <h2 style="font-weight: bold; font-size: 2rem; color: #1f2937; margin: 0;">Research Interests</h2>
           </div>
           
-          <div style="flex: 1; min-width: 300px; padding: 2rem; background: linear-gradient(135deg, #fef7ff 0%, #f3e8ff 100%); border-radius: 12px; border-left: 4px solid #8b5cf6;">
-            <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
-              <span style="font-size: 2rem; margin-right: 1rem;">🤖</span>
-              <h3 style="font-weight: bold; font-size: 1.4rem; color: #1e293b; margin: 0;">Large Language Models</h3>
+          <!-- 右侧内容 -->
+          <div style="flex: 1; min-width: 400px;">
+            
+            <!-- Graph Machine Learning -->
+            <div style="margin-bottom: 3rem;">
+              <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                <span style="font-size: 1.5rem; margin-right: 0.8rem;">🔗</span>
+                <h3 style="font-weight: 600; font-size: 1.3rem; color: #1f2937; margin: 0;">Graph Machine Learning</h3>
+              </div>
+              <p style="color: #4b5563; margin: 0; line-height: 1.7;">
+                Many real-world problems are inherently graph-structured, e.g., social networks, biological networks, World Wide Web, molecules, circuits, brain, road networks, knowledge graphs. Many machine learning algorithms are also defined on graphs, such as neural networks and graphical models. In this field, we develop algorithms and theories for learning over graphs, and apply them to problems like link prediction, graph classification, graph structure optimization, and knowledge graph reasoning. We are also interested in practical applications of graph neural networks, including brain modeling, drug discovery, circuit design, and healthcare applications.
+              </p>
             </div>
-            <p style="color: #475569; margin: 0;">
-              Compared to machine, human posesses extreme flexibility in handling unseen tasks in a few-shot/zero-shot way, much of which is attributed to human's system-II intelligence for complex logical reasoning, task planning, causal reasoning, and inductive generalization. Large language models (LLMs) have shown unprecedented improvement on such abilities, while still fail in some top-human-level tasks, such as scientific innovation, software engineering, super-long writing, autonomous agents, etc. In this field, we aim to 1) design next-generation LLM architectures with long-term memory, human-like learning mechanisms, fast training/inference, and superior long-context abilities, 2) understand and improve LLMs' reasoning ability, ultimately matching or outperforming human on the most challenging tasks, and 3) explore LLMs' integration with other modalities, such as graph, code, relational database (RDB), image, video, etc.
-            </p>
+            
+            <!-- Large Language Models -->
+            <div>
+              <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                <span style="font-size: 1.5rem; margin-right: 0.8rem;">🤖</span>
+                <h3 style="font-weight: 600; font-size: 1.3rem; color: #1f2937; margin: 0;">Large Language Models</h3>
+              </div>
+              <p style="color: #4b5563; margin: 0; line-height: 1.7;">
+                Compared to machine, human posesses extreme flexibility in handling unseen tasks in a few-shot/zero-shot way, much of which is attributed to human's system-II intelligence for complex logical reasoning, task planning, causal reasoning, and inductive generalization. Large language models (LLMs) have shown unprecedented improvement on such abilities, while still fail in some top-human-level tasks, such as scientific innovation, software engineering, super-long writing, autonomous agents, etc. In this field, we aim to 1) design next-generation LLM architectures with long-term memory, human-like learning mechanisms, fast training/inference, and superior long-context abilities, 2) understand and improve LLMs' reasoning ability, ultimately matching or outperforming human on the most challenging tasks, and 3) explore LLMs' integration with other modalities, such as graph, code, relational database (RDB), image, video, etc.
+              </p>
+            </div>
+            
           </div>
           
         </div>
@@ -64,9 +76,9 @@ sections:
       columns: '1'
       background:
         gradient: false
-        color: white
+        color: light
       spacing:
-        padding: ['40px', '0', '40px', '0']
+        padding: ['50px', '0', '50px', '0']
   
   - block: markdown
     content:
