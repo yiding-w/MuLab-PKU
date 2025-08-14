@@ -21,8 +21,8 @@ sections:
               Welcome to Muhan's Research Lab!
             </h2>
             <p style="font-size: 1.1rem; line-height: 1.6; color: #4b5563;">
-            Mμ Lab is dedicated to pursuing principled and transformative research in artificial intelligence and machine learning. While our current focus spans graph learning and large language models, our long-term mission is broader: to accelerate the development of artificial general intelligence (AGI) and deepen the scientific understanding of intelligence itself. We strive to combine theoretical rigor with practical impact, designing algorithms that are not only powerful but also explainable, efficient, and generalizable across diverse dimensions. 
-            Our research vision is to tackle foundational challenges—spanning model architectures, reasoning, memory, multi-modal intelligence, and AI for science—that push the boundaries of what machines can achieve. Mμ Lab is a place for creative, passionate, and ambitious researchers who aim to produce work that stands the test of time, advances the science of AI, and benefits society in profound ways.
+              <strong>Mμ Lab</strong> is dedicated to pursuing principled and transformative research in <strong>artificial intelligence</strong> and <strong>machine learning</strong>. While our current focus spans <strong>graph learning</strong> and <strong>large language models</strong>, our long-term mission is broader: to accelerate the development of <strong>artificial general intelligence (AGI)</strong> and deepen the scientific understanding of intelligence itself. We strive to combine <strong>theoretical rigor</strong> with practical impact, designing algorithms that are not only powerful but also <strong>explainable</strong>, <strong>efficient</strong>, and <strong>generalizable</strong> across diverse dimensions.
+              Our research vision is to tackle foundational challenges—spanning <strong>model architectures</strong>, <strong>reasoning</strong>, <strong>memory</strong>, <strong>multi-modal intelligence</strong>, and <strong>AI for science</strong>—that push the boundaries of what machines can achieve. Mμ Lab is a place for creative, passionate, and ambitious researchers who aim to produce work that stands the test of time, advances the science of AI, and benefits society in profound ways.
             </p>
           </div>
   
@@ -34,7 +34,6 @@ sections:
 
   - block: markdown
     content:
-      title: "Research Interests"
       subtitle: ""
       text: |
         <div style="text-align: center; margin-bottom: 3rem;">
