@@ -21,7 +21,7 @@ sections:
               Welcome to Muhan's Research Lab!
             </h2>
             <p style="font-size: 1.1rem; line-height: 1.6; color: #4b5563;">
-              We are dedicated to <strong>revealing the intelligence behind graphs and reasoning</strong>. Our research focuses on graph machine learning and large language model reasoning, pushing the boundaries of AI to understand complex structured data and human-like reasoning abilities.
+              Mμ Lab is dedicated to pursuing principled and transformative research in artificial intelligence and machine learning. While our current focus spans graph learning and large language models, our long-term mission is broader: to accelerate the development of artificial general intelligence (AGI) and deepen the scientific understanding of intelligence itself. We strive to combine theoretical rigor with practical impact, designing algorithms that are not only powerful but also explainable, efficient, and generalizable across diverse dimensions. Our research vision is to tackle foundational challenges—spanning model architectures, reasoning, memory, multi-modal intelligence, and AI for science—that push the boundaries of what machines can achieve. Mμ Lab is a place for creative, passionate, and ambitious researchers who aim to produce work that stands the test of time, advances the science of AI, and benefits society in profound ways.
             </p>
           </div>
   
