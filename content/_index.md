@@ -64,13 +64,9 @@ sections:
             </div>
             <p style="color: #4b5563; line-height: 1.7;">
               Compared to machines, humans possess extreme flexibility in handling unseen tasks in a few-shot/zero-shot way, much of which is attributed to human system-II intelligence for complex logical reasoning, task planning, causal reasoning, and inductive generalization. Large language models (LLMs) have shown unprecedented improvement in such abilities, but still face challenges in top human-level tasks, such as scientific innovation, software engineering, long-form writing, and autonomous agents. In this field, we aim to:
-            </p>
-            <p style="color: #4b5563; line-height: 1.7;">
-              <strong>a)</strong> Design next-generation LLM architectures with long-term memory, human-like learning mechanisms, fast training/inference, and superior long-context abilities.  
-              <br><br>
-              <strong>b)</strong> Improve LLMs' reasoning ability to match or surpass humans in the most complex tasks.  
-              <br><br>
-              <strong>c)</strong> Explore LLMs' integration with various modalities, such as graphs, code, relational databases (RDB), images, and videos.
+              a) Design next-generation LLM architectures with long-term memory, human-like learning mechanisms, fast training/inference, and superior long-context abilities.  
+              b) Improve LLMs' reasoning ability to match or surpass humans in the most complex tasks.  
+              c) Explore LLMs' integration with various modalities, such as graphs, code, relational databases (RDB), images, and videos.
             </p>
           </div>
         </div>
