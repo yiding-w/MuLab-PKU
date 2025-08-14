@@ -42,29 +42,31 @@ sections:
 
         <div style="display: flex; justify-content: space-between; gap: 2rem; margin-bottom: 3rem;">
           <!-- Left Column: Graph Machine Learning -->
-          <div style="flex: 1; padding: 1rem;">
+          <div style="flex: 1; min-width: 350px; padding: 1rem;">
             <div style="display: flex; align-items: center; margin-bottom: 1rem;">
               <span style="font-size: 2rem; margin-right: 0.8rem;">🔗</span>
               <h3 style="font-weight: 600; font-size: 1.5rem; color: #1f2937; margin: 0;">Graph Machine Learning</h3>
             </div>
             <p style="color: #4b5563; line-height: 1.7;">
-              Many real-world problems are inherently graph-structured, e.g., social networks, biological networks, World Wide Web, molecules, circuits, brain, road networks, knowledge graphs. Many machine learning algorithms are also defined on graphs, such as neural networks and graphical models. In this field, we develop algorithms and theories for learning over graphs, and apply them to problems like link prediction, graph classification, graph structure optimization, and knowledge graph reasoning. We are also interested in practical applications of graph neural networks, including brain modeling, drug discovery, circuit design, and healthcare applications.
+              Many real-world problems are inherently graph-structured, such as social networks, biological networks, the World Wide Web, molecules, circuits, brains, road networks, and knowledge graphs. Many machine learning algorithms are also defined on graphs, such as neural networks and graphical models. In this field, we develop algorithms and theories for learning over graphs, and apply them to problems like link prediction, graph classification, graph structure optimization, and knowledge graph reasoning. We are also interested in practical applications of graph neural networks, including brain modeling, drug discovery, circuit design, and healthcare applications.
             </p>
           </div>
 
+          <!-- Divider -->
+          <div style="width: 1px; background-color: #d1d5db; margin: 0 2rem;"></div>
+
           <!-- Right Column: Large Language Models -->
-          <div style="flex: 1; padding: 1rem;">
+          <div style="flex: 1; min-width: 350px; padding: 1rem;">
             <div style="display: flex; align-items: center; margin-bottom: 1rem;">
               <span style="font-size: 2rem; margin-right: 0.8rem;">🤖</span>
               <h3 style="font-weight: 600; font-size: 1.5rem; color: #1f2937; margin: 0;">Large Language Models</h3>
             </div>
             <p style="color: #4b5563; line-height: 1.7;">
-              Compared to machines, humans possess extreme flexibility in handling unseen tasks in a few-shot/zero-shot way, much of which is attributed to human system-II intelligence for complex logical reasoning, task planning, causal reasoning, and inductive generalization. Large language models (LLMs) have shown unprecedented improvement in such abilities, but still fail in top human-level tasks, such as scientific innovation, software engineering, super-long writing, autonomous agents, etc. In this field, we aim to: 
-              <ul style="color: #4b5563;">
-                <li>Design next-generation LLM architectures with long-term memory, human-like learning mechanisms, fast training/inference, and superior long-context abilities.</li>
-                <li>Understand and improve LLMs' reasoning ability, ultimately matching or outperforming humans on the most challenging tasks.</li>
-                <li>Explore LLMs' integration with other modalities, such as graph, code, relational database (RDB), image, video, etc.</li>
-              </ul>
+              Compared to machines, humans possess extreme flexibility in handling unseen tasks in a few-shot/zero-shot way, much of which is attributed to human system-II intelligence for complex logical reasoning, task planning, causal reasoning, and inductive generalization. Large language models (LLMs) have shown unprecedented improvement in such abilities, but still face challenges in top human-level tasks, such as scientific innovation, software engineering, long-form writing, and autonomous agents. In this field, we aim to:
+              <br><br>
+              - Design next-generation LLM architectures with long-term memory, human-like learning mechanisms, fast training/inference, and superior long-context abilities.  
+              - Improve LLMs' reasoning ability to match or surpass humans in the most complex tasks.  
+              - Explore LLMs' integration with various modalities, such as graphs, code, relational databases (RDB), images, and videos.
             </p>
           </div>
         </div>
