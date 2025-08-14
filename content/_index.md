@@ -21,13 +21,38 @@ sections:
               Welcome to Muhan's Research Lab!
             </h2>
             <p style="font-size: 1.1rem; line-height: 1.6; color: #4b5563;">
-            Mμ Lab is dedicated to pursuing principled and transformative research in artificial intelligence and machine learning. While our current focus spans graph learning and large language models, our long-term mission is broader: to accelerate the development of artificial general intelligence (AGI) and deepen the scientific understanding of intelligence itself. We strive to combine theoretical rigor with practical impact, designing algorithms that are not only powerful but also explainable, efficient, and generalizable across diverse dimensions.
+            Mμ Lab is dedicated to pursuing principled and transformative research in artificial intelligence and machine learning. While our current focus spans graph learning and large language models, our long-term mission is broader: to accelerate the development of artificial general intelligence (AGI) and deepen the scientific understanding of intelligence itself. We strive to combine theoretical rigor with practical impact, designing algorithms that are not only powerful but also explainable, efficient, and generalizable across diverse dimensions. 
+            Our research vision is to tackle foundational challenges—spanning model architectures, reasoning, memory, multi-modal intelligence, and AI for science—that push the boundaries of what machines can achieve. Mμ Lab is a place for creative, passionate, and ambitious researchers who aim to produce work that stands the test of time, advances the science of AI, and benefits society in profound ways.
             </p>
           </div>
   
         </div>
     design:
       columns: '1'
+      spacing:
+        padding: ['40px', '0', '40px', '0']
+
+  - block: markdown
+    content:
+      title: Research Interests
+      subtitle: ''
+      text: |
+        <div style="font-size: 1rem; line-height: 1.8; color: #374151;">
+          <div style="margin-bottom: 2rem;">
+            <h3 style="font-weight: bold; font-size: 1.3rem; color: #1f2937; margin-bottom: 1rem;">🔗 Graph Machine Learning</h3>
+            <p>Many real-world problems are inherently graph-structured, e.g., social networks, biological networks, World Wide Web, molecules, circuits, brain, road networks, knowledge graphs. Many machine learning algorithms are also defined on graphs, such as neural networks and graphical models. In this field, I develop algorithms and theories for learning over graphs, and apply them to problems like link prediction, graph classification, graph structure optimization, and knowledge graph reasoning. I am also interested in practical applications of graph neural networks, including brain modeling, drug discovery, circuit design, and healthcare applications.</p>
+          </div>
+          
+          <div>
+            <h3 style="font-weight: bold; font-size: 1.3rem; color: #1f2937; margin-bottom: 1rem;">🤖 Large Language Models</h3>
+            <p>Compared to machine, human posesses extreme flexibility in handling unseen tasks in a few-shot/zero-shot way, much of which is attributed to human's system-II intelligence for complex logical reasoning, task planning, causal reasoning, and inductive generalization. Large language models (LLMs) have shown unprecedented improvement on such abilities, while still fail in some top-human-level tasks, such as scientific innovation, software engineering, super-long writing, autonomous agents, etc. In this field, we aim to 1) design next-generation LLM architectures with long-term memory, human-like learning mechanisms, fast training/inference, and superior long-context abilities, 2) understand and improve LLMs' reasoning ability, ultimately matching or outperforming human on the most challenging tasks, and 3) explore LLMs' integration with other modalities, such as graph, code, relational database (RDB), image, video, etc.</p>
+          </div>
+        </div>
+    design:
+      columns: '1'
+      background:
+        gradient: false
+        color: white
       spacing:
         padding: ['40px', '0', '40px', '0']
   
