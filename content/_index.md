@@ -37,16 +37,28 @@ sections:
       title: Research Interests
       subtitle: ''
       text: |
-        <div style="font-size: 1rem; line-height: 1.8; color: #374151;">
-          <div style="margin-bottom: 2rem;">
-            <h3 style="font-weight: bold; font-size: 1.3rem; color: #1f2937; margin-bottom: 1rem;">🔗 Graph Machine Learning</h3>
-            <p>Many real-world problems are inherently graph-structured, e.g., social networks, biological networks, World Wide Web, molecules, circuits, brain, road networks, knowledge graphs. Many machine learning algorithms are also defined on graphs, such as neural networks and graphical models. In this field, I develop algorithms and theories for learning over graphs, and apply them to problems like link prediction, graph classification, graph structure optimization, and knowledge graph reasoning. I am also interested in practical applications of graph neural networks, including brain modeling, drug discovery, circuit design, and healthcare applications.</p>
+        <div style="display: flex; gap: 3rem; flex-wrap: wrap; font-size: 1rem; line-height: 1.8;">
+          
+          <div style="flex: 1; min-width: 300px; padding: 2rem; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); border-radius: 12px; border-left: 4px solid #3b82f6;">
+            <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+              <span style="font-size: 2rem; margin-right: 1rem;">🔗</span>
+              <h3 style="font-weight: bold; font-size: 1.4rem; color: #1e293b; margin: 0;">Graph Machine Learning</h3>
+            </div>
+            <p style="color: #475569; margin: 0;">
+              Many real-world problems are inherently graph-structured, e.g., social networks, biological networks, World Wide Web, molecules, circuits, brain, road networks, knowledge graphs. Many machine learning algorithms are also defined on graphs, such as neural networks and graphical models. In this field, we develop algorithms and theories for learning over graphs, and apply them to problems like link prediction, graph classification, graph structure optimization, and knowledge graph reasoning. We are also interested in practical applications of graph neural networks, including brain modeling, drug discovery, circuit design, and healthcare applications.
+            </p>
           </div>
           
-          <div>
-            <h3 style="font-weight: bold; font-size: 1.3rem; color: #1f2937; margin-bottom: 1rem;">🤖 Large Language Models</h3>
-            <p>Compared to machine, human posesses extreme flexibility in handling unseen tasks in a few-shot/zero-shot way, much of which is attributed to human's system-II intelligence for complex logical reasoning, task planning, causal reasoning, and inductive generalization. Large language models (LLMs) have shown unprecedented improvement on such abilities, while still fail in some top-human-level tasks, such as scientific innovation, software engineering, super-long writing, autonomous agents, etc. In this field, we aim to 1) design next-generation LLM architectures with long-term memory, human-like learning mechanisms, fast training/inference, and superior long-context abilities, 2) understand and improve LLMs' reasoning ability, ultimately matching or outperforming human on the most challenging tasks, and 3) explore LLMs' integration with other modalities, such as graph, code, relational database (RDB), image, video, etc.</p>
+          <div style="flex: 1; min-width: 300px; padding: 2rem; background: linear-gradient(135deg, #fef7ff 0%, #f3e8ff 100%); border-radius: 12px; border-left: 4px solid #8b5cf6;">
+            <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+              <span style="font-size: 2rem; margin-right: 1rem;">🤖</span>
+              <h3 style="font-weight: bold; font-size: 1.4rem; color: #1e293b; margin: 0;">Large Language Models</h3>
+            </div>
+            <p style="color: #475569; margin: 0;">
+              Compared to machine, human posesses extreme flexibility in handling unseen tasks in a few-shot/zero-shot way, much of which is attributed to human's system-II intelligence for complex logical reasoning, task planning, causal reasoning, and inductive generalization. Large language models (LLMs) have shown unprecedented improvement on such abilities, while still fail in some top-human-level tasks, such as scientific innovation, software engineering, super-long writing, autonomous agents, etc. In this field, we aim to 1) design next-generation LLM architectures with long-term memory, human-like learning mechanisms, fast training/inference, and superior long-context abilities, 2) understand and improve LLMs' reasoning ability, ultimately matching or outperforming human on the most challenging tasks, and 3) explore LLMs' integration with other modalities, such as graph, code, relational database (RDB), image, video, etc.
+            </p>
           </div>
+          
         </div>
     design:
       columns: '1'
@@ -64,8 +76,8 @@ sections:
         <div style="font-size: 0.95rem; line-height: 1.8;">
           <p><strong>5/1/2025:</strong> Three papers accepted at <strong>ICML-25</strong>! Congrats to Fanxu, Yanbo and Zian! 🎉</p>
           <p><strong>1/23/2025:</strong> Three papers accepted at <strong>ICLR-25</strong>! Congrats to Lecheng, Haotong and Zian! 🎉</p>
-          <p><strong>1/20/2025:</strong> Collaborated with RedNote and released <strong>RedStar</strong>, a long-chain-of-thought O1-like model for complex reasoning. <a href="#" style="color: #2563eb;">See the preprint</a>.</p>
-          <p><strong>12/18/2024:</strong> Released <strong>LIFT</strong>, a new paradigm to address long context problems of LLMs by fine-tuning long input into model parameters. <a href="#" style="color: #2563eb;">See the preprint</a>.</p>
+          <p><strong>1/20/2025:</strong> Collaborated with RedNote and released <strong>RedStar</strong>, a long-chain-of-thought O1-like model for complex reasoning. <a href="https://arxiv.org/pdf/2501.11284" style="color: #2563eb;">See the preprint</a>.</p>
+          <p><strong>12/18/2024:</strong> Released <strong>LIFT</strong>, a new paradigm to address long context problems of LLMs by fine-tuning long input into model parameters. <a href="https://arxiv.org/pdf/2412.13626" style="color: #2563eb;">See the preprint</a>.</p>
           <p><strong>11/7/2024:</strong> Open-sourced <strong>NUPA</strong> studying the Numerical Understanding and Processing Abilities of LLMs with 4 numerical representations and 17 distinct tasks.</p>
           <p><strong>9/26/2024:</strong> Four papers accepted at <strong>NeurIPS-24</strong>! Congrats to Fanxu, Cai, Xiaojuan and Yanbo! 🎉</p>
           <p><strong>7/12/2024:</strong> Released <strong>GOFA</strong>, the Generative One For All model for tackling all tasks on all kinds of graphs.</p>
