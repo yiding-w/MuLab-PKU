@@ -10,9 +10,9 @@ main:
   - name: Publications
     url: publication
     weight: 40
-  - name: Resources
-    url: resources
-    weight: 40
+  # - name: Resources
+  #   url: resources
+  #   weight: 40
   - name: Contact
     url: /#contact
     weight: 60
