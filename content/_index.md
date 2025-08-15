@@ -41,7 +41,7 @@ sections:
           <h2 style="font-size: 2rem; font-weight: 600; color: #1f2937; margin: 0;">Research Interests</h2>
         </div>
 
-        <div style="display: flex; justify-content: space-evenly; align-items: flex-start; gap: 2rem; margin-bottom: 3rem; max-width: 1400px; margin-left: auto; margin-right: auto;">
+        <div style="display: flex; justify-content: center; align-items: flex-start; gap: 2rem; margin-bottom: 3rem; max-width: 1400px; margin-left: auto; margin-right: auto;">
           <!-- Left Column: Graph Machine Learning -->
           <div style="flex: 1; min-width: 500px; max-width: 700px; padding: 1rem;">
             <div style="display: flex; align-items: center; margin-bottom: 1rem;">
