@@ -136,7 +136,7 @@ sections:
       subtitle: 'Join Our Research Community'
       text: |
         <div style="font-size: 0.95rem; line-height: 1.8;">
-          <p style="font-size: 1rem; margin-bottom: 1.5rem;"><strong>Thank you so much for your interest in our work!</strong> We are actively looking for students and postdocs. MuLab welcomes applicants from diverse backgrounds.</p>
+          <p style="font-size: 1rem; margin-bottom: 1.5rem;"><strong>Thank you so much for your interest in our work!</strong> We are actively looking for students and collaborators. MuLab welcomes applicants from diverse backgrounds.</p>
           
           <p><strong>🎓 Prospective PhD Students:</strong> We are always looking for strong PhD students with interests in Graph Machine Learning and Large Language Model Reasoning. I am looking for students who meet at least three criteria: creativity and passion for research, solid math skills, solid coding skills, and good English. <em>Note: Please do not email regarding PhD admission as decisions are made by committee.</em></p>
           
