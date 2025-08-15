@@ -37,7 +37,8 @@ education:
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 social:
-  - icon: "custom/homepage-svgrepo-com"
+  - icon: home
+    icon_pack: fas
     link: https://yiding-w.github.io
   - icon: envelope
     icon_pack: fas
