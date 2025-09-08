@@ -66,7 +66,7 @@ user_groups:
 ---
 
 
-I am now a first-year Ph.D. student at the Institute for Artificial Intelligence, Peking University, advised by Prof. Muhan Zhang. Welcome to visit our group page: Graphpku!
+I am now a second-year Ph.D. student at the Institute for Artificial Intelligence, Peking University, advised by Prof. Muhan Zhang. Welcome to visit our group page: Graphpku!
 
 I received my B.S. in Physics from School of Physics, Peking University, where I was fortunate to work with Prof. Huichao Song on ML applications in heavy-ion collision.
 
