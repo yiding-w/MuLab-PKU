@@ -1,7 +1,4 @@
-
-
 ---
-
 # Display name
 title: Xingang Peng
 
@@ -27,11 +24,18 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: Fourth-year PhD student interested in AI for biology
 
+interests:
+  - AI for biology
+
+education:
+  courses:
+    - course: PhD in Artificial Intelligence (Expected 2027)
+      institution: Peking University, Institute of Artificial Intelligence
+      year: 2027
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 social:
-
   - icon: envelope
     icon_pack: fas
     link: 'mailto:pengxingang@stu.pku.edu.cn'
@@ -42,8 +46,8 @@ social:
     icon_pack: ai
     link: https://scholar.google.com/citations?user=6yMuAlgAAAAJ
   - icon: linkedin
-      icon_pack: fab
-      link: https://www.linkedin.com/in/xingang-peng-909a30167
+    icon_pack: fab
+    link: https://www.linkedin.com/in/xingang-peng-909a30167
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: 'pengxingang@stu.pku.edu.cn'
@@ -55,9 +59,9 @@ highlight_name: false
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - PhD Students
-
 ---
 
 
 I am a fourth-year Ph.D. student at the Institute for Artificial Intelligence, Peking University, co-supervised by Prof. Muhan Zhang and Prof. Jianzhu Ma. My research focuses on computational biology and AI for science, particularly structural molecular biology. I work on generative molecular modeling, including PPI interactions, molecular design and molecular structure prediction.
 
+---
