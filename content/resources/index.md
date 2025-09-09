@@ -102,35 +102,38 @@ sections:
         </style>
 
         <script>
-        const API_ENDPOINT = '/api/gpu_status';
-        function getUtilizationClass(u){ if(u<30) return 'utilization-low'; if(u<70) return 'utilization-medium'; return 'utilization-high'; }
-        function getMemoryClass(p){ if(p<50) return 'memory-low'; if(p<80) return 'memory-medium'; return 'memory-high'; }
-        function formatMemory(mb){ return mb>=1024 ? (mb/1024).toFixed(1)+ ' GB' : mb.toFixed(0)+' MB'; }
-        function createGPUCard(g){ const mp=(g.mem_used/g.mem_total)*100; return `
-          <div class="gpu-card">
-            <div class="gpu-header"><div class="gpu-name">GPU ${g.id}</div><div class="gpu-id">${g.name}</div></div>
-            <div class="usage-bars">
-              <div class="usage-bar"><div class="usage-label"><span>Utilization</span><span><strong>${g.utilization.toFixed(1)}%</strong></span></div>
-                <div class="progress-bar"><div class="progress-fill ${getUtilizationClass(g.utilization)}" style="width: ${g.utilization}%"></div></div>
-              </div>
-              <div class="usage-bar"><div class="usage-label"><span>Memory</span><span><strong>${mp.toFixed(1)}%</strong></span></div>
-                <div class="progress-bar"><div class="progress-fill ${getMemoryClass(mp)}" style="width: ${mp}%"></div></div>
-              </div>
-            </div>
-            <div class="gpu-stats"><span>Used: ${formatMemory(g.mem_used)}</span><span>Total: ${formatMemory(g.mem_total)}</span></div>
-          </div>`; }
-        function createServerCard(s){ const on=s.status==='success'; let c=`
-          <div class="server-card">
-            <div class="server-header">
-              <div><div class="server-title"><span class="status-indicator ${on?"status-success":"status-error"}"></span>${s.hostname}:${s.port}</div></div>
-              <div class="server-summary">${on?`${s.summary.used}/${s.summary.total} GPUs Online`:`Server Offline`}
-              </div></div>`; if(on&&s.gpus&&s.gpus.length>0){ c+=`<div class="gpu-grid">${s.gpus.map(createGPUCard).join("")}</div>` } else if(!on){ c+=`<div style="text-align:center;padding:2rem;color:#6b7280;"><div style="font-size:1.05rem;">⚠️ Server is currently offline</div><div style="font-size:.9rem;margin-top:.5rem;">Unable to retrieve GPU information</div></div>` } return c+'</div>'; }
-        async function loadGPUData(){ const loading=document.getElementById('loading'); const error=document.getElementById('error-message'); const box=document.getElementById('servers-container'); const time=document.getElementById('update-time'); const btn=document.getElementById('refresh-btn'); loading.style.display='block'; error.style.display='none'; box.style.display='none'; btn.disabled=true; btn.style.backgroundColor='#9ca3af';
-          try{ const resp=await fetch(API_ENDPOINT, { headers: { 'accept': 'application/json' } }); if(!resp.ok){ let body=''; try{ body=await resp.text(); }catch{} throw new Error(`HTTP ${resp.status} ${resp.statusText} - ${body?.slice(0,200) || 'No body'}`) } const data=await resp.json(); const servers=Array.isArray(data)?data:[data]; loading.style.display='none'; box.innerHTML=servers.map(createServerCard).join(''); box.style.display='block'; time.textContent=(new Date()).toLocaleString(); }
-          catch(e){ console.error('Error loading GPU data:', e); loading.style.display='none'; error.style.display='block'; document.getElementById('error-details').textContent=e.message; }
-          finally{ btn.disabled=false; btn.style.backgroundColor='#3b82f6'; }
-        }
-        document.addEventListener('DOMContentLoaded', function(){ loadGPUData(); setInterval(loadGPUData, 30000); });
+        // 在本地预览(localhost/127.0.0.1)时直接调后端，线上通过 Netlify 代理 /api/*
+        const API_ENDPOINT = (location.hostname === 'localhost' || location.hostname === '127.0.0.1')
+          ? 'http://58.56.75.202:8000/api/gpu_status'
+          : '/api/gpu_status';
+         function getUtilizationClass(u){ if(u<30) return 'utilization-low'; if(u<70) return 'utilization-medium'; return 'utilization-high'; }
+         function getMemoryClass(p){ if(p<50) return 'memory-low'; if(p<80) return 'memory-medium'; return 'memory-high'; }
+         function formatMemory(mb){ return mb>=1024 ? (mb/1024).toFixed(1)+ ' GB' : mb.toFixed(0)+' MB'; }
+         function createGPUCard(g){ const mp=(g.mem_used/g.mem_total)*100; return `
+           <div class="gpu-card">
+             <div class="gpu-header"><div class="gpu-name">GPU ${g.id}</div><div class="gpu-id">${g.name}</div></div>
+             <div class="usage-bars">
+               <div class="usage-bar"><div class="usage-label"><span>Utilization</span><span><strong>${g.utilization.toFixed(1)}%</strong></span></div>
+                 <div class="progress-bar"><div class="progress-fill ${getUtilizationClass(g.utilization)}" style="width: ${g.utilization}%"></div></div>
+               </div>
+               <div class="usage-bar"><div class="usage-label"><span>Memory</span><span><strong>${mp.toFixed(1)}%</strong></span></div>
+                 <div class="progress-bar"><div class="progress-fill ${getMemoryClass(mp)}" style="width: ${mp}%"></div></div>
+               </div>
+             </div>
+             <div class="gpu-stats"><span>Used: ${formatMemory(g.mem_used)}</span><span>Total: ${formatMemory(g.mem_total)}</span></div>
+           </div>`; }
+         function createServerCard(s){ const on=s.status==='success'; let c=`
+           <div class="server-card">
+             <div class="server-header">
+               <div><div class="server-title"><span class="status-indicator ${on?"status-success":"status-error"}"></span>${s.hostname}:${s.port}</div></div>
+               <div class="server-summary">${on?`${s.summary.used}/${s.summary.total} GPUs Online`:`Server Offline`}
+               </div></div>`; if(on&&s.gpus&&s.gpus.length>0){ c+=`<div class="gpu-grid">${s.gpus.map(createGPUCard).join("")}</div>` } else if(!on){ c+=`<div style="text-align:center;padding:2rem;color:#6b7280;"><div style="font-size:1.05rem;">⚠️ Server is currently offline</div><div style="font-size:.9rem;margin-top:.5rem;">Unable to retrieve GPU information</div></div>` } return c+'</div>'; }
+         async function loadGPUData(){ const loading=document.getElementById('loading'); const error=document.getElementById('error-message'); const box=document.getElementById('servers-container'); const time=document.getElementById('update-time'); const btn=document.getElementById('refresh-btn'); loading.style.display='block'; error.style.display='none'; box.style.display='none'; btn.disabled=true; btn.style.backgroundColor='#9ca3af';
+           try{ const resp=await fetch(API_ENDPOINT, { headers: { 'accept': 'application/json' } }); if(!resp.ok){ let body=''; try{ body=await resp.text(); }catch{} throw new Error(`HTTP ${resp.status} ${resp.statusText} - ${body?.slice(0,200) || 'No body'}`) } const data=await resp.json(); const servers=Array.isArray(data)?data:[data]; loading.style.display='none'; box.innerHTML=servers.map(createServerCard).join(''); box.style.display='block'; time.textContent=(new Date()).toLocaleString(); }
+           catch(e){ console.error('Error loading GPU data:', e); loading.style.display='none'; error.style.display='block'; document.getElementById('error-details').textContent=`[${API_ENDPOINT}] ${e.message}`; }
+           finally{ btn.disabled=false; btn.style.backgroundColor='#3b82f6'; }
+         }
+         document.addEventListener('DOMContentLoaded', function(){ loadGPUData(); setInterval(loadGPUData, 30000); });
         </script>
     design:
       columns: '1'

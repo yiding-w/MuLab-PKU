@@ -21,8 +21,8 @@
     debug = true
 
 # Proxy API to avoid mixed-content/CORS
+# 使用通配规则，覆盖所有 /api/* 路径
 [[redirects]]
-  from = "/api/gpu_status"
-  to = "http://58.56.75.202:8000/api/gpu_status"
+  from = "/api/*"
+  to = "http://58.56.75.202:8000/:splat"
   status = 200
-  force = true
