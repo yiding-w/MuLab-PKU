@@ -2,6 +2,10 @@
 title: "GPU Usage Monitor"
 date: 2025-01-09
 summary: "Real-time GPU usage monitoring for lab servers"
+type: page
+url: "/resources/gpu-monitor/"
+slug: "gpu-monitor"
+draft: false
 ---
 
 <div id="gpu-monitor-container">
