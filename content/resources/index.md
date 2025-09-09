@@ -102,7 +102,7 @@ sections:
         </style>
 
         <script>
-        const API_ENDPOINT = 'http://58.56.75.202:8000/api/gpu_status';
+        const API_ENDPOINT = '/api/gpu_status';
         function getUtilizationClass(u){ if(u<30) return 'utilization-low'; if(u<70) return 'utilization-medium'; return 'utilization-high'; }
         function getMemoryClass(p){ if(p<50) return 'memory-low'; if(p<80) return 'memory-medium'; return 'memory-high'; }
         function formatMemory(mb){ return mb>=1024 ? (mb/1024).toFixed(1)+ ' GB' : mb.toFixed(0)+' MB'; }

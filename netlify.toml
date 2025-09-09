@@ -19,3 +19,10 @@
   package = "netlify-plugin-hugo-cache-resources"
   [plugins.inputs]
     debug = true
+
+# Proxy API to avoid mixed-content/CORS
+[[redirects]]
+  from = "/api/gpu_status"
+  to = "http://58.56.75.202:8000/api/gpu_status"
+  status = 200
+  force = true
