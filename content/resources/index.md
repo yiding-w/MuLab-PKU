@@ -102,10 +102,9 @@ sections:
         </style>
 
         <script>
-        // 在本地预览(localhost/127.0.0.1)时直接调后端，线上通过 Netlify 代理 /api/*
-        const API_ENDPOINT = (location.hostname === 'localhost' || location.hostname === '127.0.0.1')
-          ? 'http://58.56.75.202:8000/api/gpu_status'
-          : '/api/gpu_status';
+        // 在本地预览时（localhost/127.0.0.1/0.0.0.0/::1 或 Hugo 默认端口 1313）直连后端；线上通过 Netlify 代理 /api/*
+        const isLocalDev = ['localhost','127.0.0.1','0.0.0.0','::1','[::1]'].includes(location.hostname) || location.port === '1313';
+        const API_ENDPOINT = isLocalDev ? 'http://58.56.75.202:8000/api/gpu_status' : '/api/gpu_status';
          function getUtilizationClass(u){ if(u<30) return 'utilization-low'; if(u<70) return 'utilization-medium'; return 'utilization-high'; }
          function getMemoryClass(p){ if(p<50) return 'memory-low'; if(p<80) return 'memory-medium'; return 'memory-high'; }
          function formatMemory(mb){ return mb>=1024 ? (mb/1024).toFixed(1)+ ' GB' : mb.toFixed(0)+' MB'; }
@@ -127,7 +126,7 @@ sections:
              <div class="server-header">
                <div><div class="server-title"><span class="status-indicator ${on?"status-success":"status-error"}"></span>${s.hostname}:${s.port}</div></div>
                <div class="server-summary">${on?`${s.summary.used}/${s.summary.total} GPUs Online`:`Server Offline`}
-               </div></div>`; if(on&&s.gpus&&s.gpus.length>0){ c+=`<div class="gpu-grid">${s.gpus.map(createGPUCard).join("")}</div>` } else if(!on){ c+=`<div style="text-align:center;padding:2rem;color:#6b7280;"><div style="font-size:1.05rem;">⚠️ Server is currently offline</div><div style="font-size:.9rem;margin-top:.5rem;">Unable to retrieve GPU information</div></div>` } return c+'</div>'; }
+               </div></div>`; if(on&&s.gpus&&s.gpus.length>0){ c+=`<div class="gpu-grid">${s.gpus.map(createGPUCard).join("")}</div>` } else if(!on){ c+=`<div style=\"text-align:center;padding:2rem;color:#6b7280;\"><div style=\"font-size:1.05rem;\">⚠️ Server is currently offline</div><div style=\"font-size:.9rem;margin-top:.5rem;\">Unable to retrieve GPU information</div></div>` } return c+'</div>'; }
          async function loadGPUData(){ const loading=document.getElementById('loading'); const error=document.getElementById('error-message'); const box=document.getElementById('servers-container'); const time=document.getElementById('update-time'); const btn=document.getElementById('refresh-btn'); loading.style.display='block'; error.style.display='none'; box.style.display='none'; btn.disabled=true; btn.style.backgroundColor='#9ca3af';
            try{ const resp=await fetch(API_ENDPOINT, { headers: { 'accept': 'application/json' } }); if(!resp.ok){ let body=''; try{ body=await resp.text(); }catch{} throw new Error(`HTTP ${resp.status} ${resp.statusText} - ${body?.slice(0,200) || 'No body'}`) } const data=await resp.json(); const servers=Array.isArray(data)?data:[data]; loading.style.display='none'; box.innerHTML=servers.map(createServerCard).join(''); box.style.display='block'; time.textContent=(new Date()).toLocaleString(); }
            catch(e){ console.error('Error loading GPU data:', e); loading.style.display='none'; error.style.display='block'; document.getElementById('error-details').textContent=`[${API_ENDPOINT}] ${e.message}`; }
