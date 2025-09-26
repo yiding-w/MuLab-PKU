@@ -16,17 +16,17 @@ sections:
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-top: 2rem;">
           
-          <!-- Research Presentations -->
+          <!-- Presentations -->
           <div style="background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
             <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
               <span style="font-size: 2rem; margin-right: 1rem;">📊</span>
-              <h3 style="color: #1f2937; margin: 0; font-weight: 600; font-size: 1.25rem;">Research Presentations</h3>
+              <h3 style="color: #1f2937; margin: 0; font-weight: 600; font-size: 1.25rem;"> Presentations</h3>
             </div>
             <div style="space-y: 1rem;">
               <div style="margin-bottom: 1rem; padding: 1rem; background-color: #f9fafb; border-radius: 8px; border-left: 4px solid #10b981;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                  <h4 style="color: #1f2937; margin: 0; font-weight: 600; font-size: 1rem;">Yansheng Mao 9-19 DLM</h4>
-                  <span style="color: #6b7280; font-size: 0.85rem;">Sep 19, 2024</span>
+                  <h4 style="color: #1f2937; margin: 0; font-weight: 600; font-size: 1rem;">Yansheng Mao--DLM 1</h4>
+                  <span style="color: #6b7280; font-size: 0.85rem;">Sep 19, 2025</span>
                 </div>
                 <p style="color: #6b7280; font-size: 0.9rem; margin: 0.5rem 0; line-height: 1.5;">Foundations of Diffusion Language Models</p>
                 <a href="/uploads/Foundations of Diffusion LLMs.pptx" download style="color: #10b981; text-decoration: none; font-weight: 500; font-size: 0.9rem;">📥 Download PPT</a>
