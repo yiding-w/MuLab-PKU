@@ -84,6 +84,10 @@ sections:
       subtitle: ''
       text: |
         <div style="font-size: 0.95rem; line-height: 1.8;">
+          <p><strong>9/19/2025:</strong> Four papers accepted at <strong>NeurIPS-25</strong>! Congrats to Fanxu, Pingzhi, Juntong, Yi, Shijia and Yanan! 🎉</p>
+          <p><strong>9/19/2025:</strong> LooGLEv2 and PHYBench accepted at <strong>NeurIPS-25</strong> Datasets and Benchmarks track! Congrats to Ziyuan, Yuxuan, Jiaqi and Shi! 🎉</p>
+          <p><strong>9/15/2025:</strong> HD-PiSSA is accepted at <strong>EMNLP-25</strong> as an <strong>oral</strong> presentation! Congrats to Yiding and Fanxu! 🎉</p>
+          <p><strong>8/5/2025:</strong> One paper accepted at <strong>CIKM-25</strong>! Congrats to Weishuo! 🎉</p>
           <p><strong>5/1/2025:</strong> Three papers accepted at <strong>ICML-25</strong>! Congrats to Fanxu, Yanbo and Zian! 🎉</p>
           <p><strong>1/23/2025:</strong> Three papers accepted at <strong>ICLR-25</strong>! Congrats to Lecheng, Haotong and Zian! 🎉</p>
           <p><strong>1/20/2025:</strong> Collaborated with RedNote and released <strong>RedStar</strong>, a long-chain-of-thought O1-like model for complex reasoning. <a href="https://arxiv.org/pdf/2501.11284" style="color: #2563eb;">See the preprint</a>.</p>
