@@ -6,7 +6,14 @@ authors:
   - Y. Hu
   - S. Kang
   - Z. Lin
-  - admin
+  - M. Zhang
+
+author_notes:
+  - ''
+  - ''
+  - ''
+  - ''
+  - 'Corresponding author'
 
 date: '2025-01-23T00:00:00Z'
 publishDate: '2025-01-23T00:00:00Z'
@@ -16,18 +23,19 @@ publication_types: ['paper-conference']
 publication: 'International Conference on Learning Representations (ICLR-25)'
 publication_short: 'ICLR-25'
 
-abstract: 'This work systematically studies number understanding in language models and proposes effective methods to improve numerical reasoning capabilities.'
+abstract: 'Large language models (LLMs) can solve an increasing number of complex reasoning tasks while making surprising mistakes in basic numerical understanding and processing (such as 9.11 > 9.9). The latter ability is essential for tackling complex arithmetic and mathematical problems and serves as a foundation for most reasoning tasks, but previous work paid little attention to it or only discussed several restricted tasks (like integer addition). In this paper, we comprehensively investigate the numerical understanding and processing ability (NUPA) of LLMs. Firstly, we introduce a benchmark covering four common numerical representations and 17 distinct numerical tasks in four major categories, resulting in 41 meaningful combinations in total. These tasks are derived from primary and secondary education curricula, encompassing nearly all everyday numerical understanding and processing scenarios, and the rules of these tasks are very simple and clear. Through the benchmark, we find that current LLMs fail frequently in many of the tasks. To study the problem, we train small models with existing and potential techniques for enhancing NUPA (such as tokenizers, PEs, and number formats), comprehensively evaluating their effectiveness using our testbed. We also finetune practical-scale LLMs on our proposed NUPA tasks and find that 1) naive finetuning can improve NUPA a lot on many but not all tasks, and 2) surprisingly, techniques designed to enhance NUPA prove ineffective for finetuning pretrained models. We further explore the impact of chain-of-thought techniques on NUPA. Our work provides a more detailed and comprehensive understanding of NUPA in LLMs.'
 
-summary: 'Comprehensive study and improvement methods for number understanding in language models.'
-
-tags:
-  - Language Models
-  - Numerical Reasoning
-  - Model Understanding
 
 featured: true
 
-url_pdf: ''
+url_pdf: 'https://arxiv.org/pdf/2411.03766'
+url_code: 'https://github.com/GraphPKU/number_cookbook'
+url_dataset: ''
+url_poster: ''
+url_project: ''
+url_slides: ''
+url_source: ''
+url_video: ''
 projects: []
 slides: ""
 ---
