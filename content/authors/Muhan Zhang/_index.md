@@ -14,7 +14,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Faculty
+role: Assistant Professor
 
 # Organizations/Affiliations
 organizations:
