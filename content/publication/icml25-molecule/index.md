@@ -7,7 +7,14 @@ authors:
   - C. Zhou
   - X. Wang
   - X. Peng
-  - admin
+  - M. Zhang
+
+author_notes:
+  - ''
+  - ''
+  - ''
+  - ''
+  - 'Corresponding author'
 
 date: '2025-05-01T00:00:00Z'
 doi: ''
@@ -19,31 +26,18 @@ publication_types: ['paper-conference']
 publication: 'Proc. International Conference on Machine Learning (ICML-25), spotlight presentation (2.6% acceptance rate)'
 publication_short: 'ICML-25 (Spotlight)'
 
-abstract: 'This work introduces geometric representation conditions that significantly improve equivariant molecule generation, achieving state-of-the-art performance in molecular design tasks.'
-
-summary: 'Geometric representation conditions for improved equivariant molecule generation with spotlight presentation at ICML-25.'
-
-tags:
-  - Molecule Generation
-  - Equivariant Networks
-  - Geometric Deep Learning
-  - Drug Discovery
+abstract: 'Recent advances in molecular generative models have demonstrated great promise for accelerating scientific discovery, particularly in drug design. However, these models often struggle to generate high-quality molecules, especially in conditional scenarios where specific molecular properties must be satisfied. In this work, we introduce GeoRCG, a general framework to improve molecular generative models by integrating geometric representation conditions with provable theoretical guarantees. We decompose the generation process into two stages: first, generating an informative geometric representation; second, generating a molecule conditioned on the representation. Compared with single-stage generation, the easy-to-generate representation in the first stage guides the second stage generation toward a high-quality molecule in a goal-oriented way. Leveraging EDM and SemlaFlow as base generators, we observe significant quality improvements in unconditional molecule generation on the widely used QM9 and GEOM-DRUG datasets. More notably, in the challenging conditional molecular generation task, our framework achieves an average 50\% performance improvement over state-of-the-art approaches, highlighting the superiority of conditioning on semantically rich geometric representations. Furthermore, with such representation guidance, the number of diffusion steps can be reduced to as small as 100 while largely preserving the generation quality achieved with 1,000 steps, thereby significantly reducing the generation iterations needed.'
 
 featured: true
 
-url_pdf: ''
-url_code: ''
+url_pdf: 'https://arxiv.org/pdf/2410.03655'
+url_code: 'https://github.com/GraphPKU/GeoRCG'
 url_dataset: ''
 url_poster: ''
 url_project: ''
 url_slides: ''
 url_source: ''
 url_video: ''
-
-image:
-  caption: 'Equivariant molecule generation framework'
-  focal_point: ''
-  preview_only: false
 
 projects: []
 slides: ""
