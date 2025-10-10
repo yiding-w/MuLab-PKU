@@ -27,11 +27,11 @@ publication_types: ['paper-conference']
 publication: 'Workshop on Spurious Correlation and Shortcut Learning: Foundations and Solutions, International Conference on Learning Representations (SCSL@ICLR-25)'
 publication_short: 'SCSL@ICLR-25'
 
-abstract: ''
+abstract: 'With the rapid advancement of text-conditioned Video Generation Models (VGMs), the quality of generated videos has significantly improved, bringing these models closer to functioning as ``*world simulators*'' and making real-world-level video generation more accessible and cost-effective. However, the generated videos often contain factual inaccuracies and lack understanding of fundamental physical laws. While some previous studies have highlighted this issue in limited domains through manual analysis, a comprehensive solution has not yet been established, primarily due to the absence of a generalized, automated approach for modeling and assessing the causal reasoning of these models across diverse scenarios. To address this gap, we propose VACT: an **automated** framework for modeling, evaluating, and measuring the causal understanding of VGMs in real-world scenarios. By combining causal analysis techniques with a carefully designed large language model assistant, our system can assess the causal behavior of models in various contexts without human annotation, which offers strong generalization and scalability. Additionally, we introduce multi-level causal evaluation metrics to provide a detailed analysis of the causal performance of VGMs. As a demonstration, we use our framework to benchmark several prevailing VGMs, offering insight into their causal reasoning capabilities. Our work lays the foundation for systematically addressing the causal understanding deficiencies in VGMs and contributes to advancing their reliability and real-world applicability.'
 
 featured: false
 
-url_pdf: ''
+url_pdf: 'https://www.arxiv.org/pdf/2503.06163'
 url_code: ''
 url_dataset: ''
 url_poster: ''
