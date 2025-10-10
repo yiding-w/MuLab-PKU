@@ -1,8 +1,5 @@
 ---
-title: 'Griffin: Tdate: '2025-07-01T00:00:00Z'
-doi: ''
-
-publishDate: '2025-07-01T00:00:00Z'ds a Graph-Centric Relational Database Foundation Model'
+title: 'Griffin: Towards a Graph-Centric Relational Database Foundation Model'
 
 # Authors
 authors:
@@ -23,17 +20,17 @@ author_notes:
   - ''
   - 'Corresponding author'
 
-date: '2025-05-01T00:00:00Z'
+date: '2025-07-01T00:00:00Z'
 doi: ''
 
-publishDate: '2025-05-01T00:00:00Z'
+publishDate: '2025-07-01T00:00:00Z'
 
 publication_types: ['paper-conference']
 
 publication: 'Proc. International Conference on Machine Learning (ICML-25)'
 publication_short: 'ICML-25'
 
-abstract: 'We introduce Griffin, the first foundation model attemptation designed specifically for Relational Databases (RDBs). Unlike previous smaller models focused on single RDB tasks, Griffin unifies the data encoder and task decoder to handle diverse tasks. Additionally, we enhance the architecture by incorporating a cross-attention module and a novel aggregator. Griffin utilizes pretraining on both single-table and RDB datasets, employing advanced encoders for categorical, numerical, and metadata features, along with innovative components such as cross-attention modules and enhanced message-passing neural networks (MPNNs) to capture the complexities of relational data. Evaluated on large-scale, heterogeneous, and temporal graphs extracted from RDBs across various domains (spanning over 150 million nodes), Griffin demonstrates superior or comparable performance to individually trained models, excels in low-data scenarios, and shows strong transferability with similarity and diversity in pretraining across new datasets and tasks, highlighting its potential as a universally applicable foundation model for RDBs.'
+abstract: 'We introduce Griffin, the first foundation model designed specifically for Relational Databases (RDBs). Unlike previous smaller models focused on single RDB tasks, Griffin unifies the data encoder and task decoder to handle diverse tasks. Additionally, we enhance the architecture by incorporating a cross-attention module and a novel aggregator. Griffin utilizes pretraining on both single-table and RDB datasets, employing advanced encoders for categorical, numerical, and metadata features, along with innovative components such as cross-attention modules and enhanced message-passing neural networks (MPNNs) to capture the complexities of relational data. Evaluated on large-scale, heterogeneous, and temporal graphs extracted from RDBs across various domains (spanning over 150 million nodes), Griffin demonstrates superior or comparable performance to individually trained models, excels in low-data scenarios, and shows strong transferability with similarity and diversity in pretraining across new datasets and tasks, highlighting its potential as a universally applicable foundation model for RDBs.'
 
 featured: true
 
