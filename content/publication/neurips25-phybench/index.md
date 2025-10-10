@@ -5,7 +5,7 @@ authors:
   - S. Qiu
   - S. Guo
   - Z. Song
-  - .et 
+  - .et el 
   - M. Zhang
   - H. X. Zhu
 
