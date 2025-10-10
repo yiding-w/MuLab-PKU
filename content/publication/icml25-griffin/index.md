@@ -1,5 +1,8 @@
 ---
-title: 'Griffin: Towards a Graph-Centric Relational Database Foundation Model'
+title: 'Griffin: Tdate: '2025-07-01T00:00:00Z'
+doi: ''
+
+publishDate: '2025-07-01T00:00:00Z'ds a Graph-Centric Relational Database Foundation Model'
 
 # Authors
 authors:
