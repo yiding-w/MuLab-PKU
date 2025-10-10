@@ -21,50 +21,38 @@
             {{ range .Pages }}
               <div class="pub-item">
                 
-                {{/* Publication content */}}
-                <div class="pub-content">
-                  
-                  {{/* Title */}}
-                  <div class="pub-title">
-                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                  </div>
-                  
-                  {{/* Authors */}}
-                  {{ with .Params.authors }}
-                    <div class="pub-authors">
-                      {{ delimit . ", " | markdownify }}
-                    </div>
-                  {{ end }}
-                  
-                  {{/* Publication info */}}
-                  <div class="pub-venue">
-                    {{ if .Params.publication }}
-                      <span class="venue-name">{{ .Params.publication | markdownify }}</span>
-                    {{ end }}
-                    {{ if .Date }}
-                      <span class="pub-date">, {{ .Date.Format "2006" }}</span>
-                    {{ end }}
-                  </div>
-                  
-                  {{/* Links */}}
-                  {{ if or .Params.url_pdf .Params.url_code .Params.url_dataset .Params.url_project }}
-                    <div class="pub-links">
-                      {{ if .Params.url_pdf }}
-                        <a href="{{ .Params.url_pdf }}" target="_blank">[PDF]</a>
-                      {{ end }}
-                      {{ if .Params.url_code }}
-                        <a href="{{ .Params.url_code }}" target="_blank">[Code]</a>
-                      {{ end }}
-                      {{ if .Params.url_dataset }}
-                        <a href="{{ .Params.url_dataset }}" target="_blank">[Dataset]</a>
-                      {{ end }}
-                      {{ if .Params.url_project }}
-                        <a href="{{ .Params.url_project }}" target="_blank">[Project]</a>
-                      {{ end }}
-                    </div>
-                  {{ end }}
-                  
+                {{/* Title */}}
+                <div class="pub-title">
+                  {{ .Title }}
                 </div>
+                
+                {{/* Authors */}}
+                {{ with .Params.authors }}
+                  <div class="pub-authors">
+                    {{ delimit . ", " | markdownify }}
+                  </div>
+                {{ end }}
+                
+                {{/* Publication venue */}}
+                {{ if .Params.publication_short }}
+                  <div class="pub-venue">{{ .Params.publication_short }}</div>
+                {{ else if .Params.publication }}
+                  <div class="pub-venue">{{ .Params.publication | markdownify }}</div>
+                {{ end }}
+                
+                {{/* Links - only show PDF and Code */}}
+                <div class="pub-links">
+                  {{ if .Params.url_pdf }}
+                    <a href="{{ .Params.url_pdf }}" target="_blank">[Paper]</a>
+                  {{ end }}
+                  {{ if .Params.url_code }}
+                    <a href="{{ .Params.url_code }}" target="_blank">[Code]</a>
+                  {{ end }}
+                  {{ if .Params.url_project }}
+                    <a href="{{ .Params.url_project }}" target="_blank">[Project Page]</a>
+                  {{ end }}
+                </div>
+                
               </div>
             {{ end }}
           </div>
@@ -76,100 +64,72 @@
 </div>
 
 <style>
-/* Clean, compact publications layout */
+/* Clean publication list matching the provided format */
 .publications-container {
   max-width: 100%;
   margin: 0 auto;
   padding: 1rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .year-group {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .year-header {
   color: #000;
-  font-weight: 600;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
 }
 
 .pub-item {
-  margin-bottom: 1rem;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #f0f0f0;
-  text-align: center;
-}
-
-.pub-item:last-child {
-  border-bottom: none;
-}
-
-.pub-content {
-  line-height: 1.4;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  line-height: 1.5;
 }
 
 .pub-title {
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin-bottom: 0.3rem;
-}
-
-.pub-title a {
   color: #000;
-  text-decoration: none;
-}
-
-.pub-title a:hover {
-  color: #333;
-  text-decoration: underline;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  line-height: 1.3;
 }
 
 .pub-authors {
-  color: #555;
+  color: #000;
+  font-weight: 400;
+  font-size: 0.95rem;
+  margin-bottom: 0.2rem;
+  line-height: 1.3;
+}
+
+.pub-venue {
+  color: #000;
+  font-weight: 400;
   font-size: 0.95rem;
   margin-bottom: 0.3rem;
 }
 
-.pub-venue {
-  color: #666;
-  font-size: 0.9rem;
-  font-style: italic;
-  margin-bottom: 0.3rem;
-}
-
-.venue-name {
-  color: #666;
-}
-
-.pub-date {
-  color: #888;
-}
-
 .pub-links {
-  font-size: 0.85rem;
-  margin-top: 0.3rem;
+  font-size: 0.9rem;
+  line-height: 1.3;
 }
 
 .pub-links a {
   color: #000;
   text-decoration: none;
-  margin: 0 0.3rem;
-  border: 1px solid #ccc;
-  padding: 0.1rem 0.4rem;
-  border-radius: 3px;
-  background-color: #f8f9fa;
+  font-weight: 400;
+  margin-right: 0.5rem;
 }
 
 .pub-links a:hover {
-  background-color: #e9ecef;
-  border-color: #aaa;
+  text-decoration: underline;
 }
 
-/* Hide all icons and search elements */
+/* Hide all unwanted elements */
 .pub-icon,
 .fas,
 .far,
@@ -186,11 +146,11 @@
   }
   
   .year-header {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   
   .pub-title {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
   
   .pub-authors,
