@@ -6,7 +6,7 @@ authors:
   - F. Meng
   - P. Tang  
   - F. Jiang
-  - admin
+  - M. Zhang
 
 # Author notes (optional)
 author_notes:
