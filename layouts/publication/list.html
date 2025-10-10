@@ -1,11 +1,11 @@
 {{- define "main" -}}
 
-<div class="container-fluid docs">
-  <div class="row">
-    <div class="col-12">
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-10 col-md-12">
       
       {{/* Custom Publications Layout with Year Grouping */}}
-      <div class="pub-list-item">
+      <div class="publications-container">
         
         {{/* Group publications by year */}}
         {{ $publications := where site.RegularPages "Type" "publication" }}
@@ -14,73 +14,55 @@
         
         {{/* Display each year group */}}
         {{ range $publications }}
-          <div class="year-group mb-5">
+          <div class="year-group">
             <h2 class="year-header">{{ .Key }}</h2>
-            <hr class="year-divider">
             
             {{/* Display publications for this year */}}
             {{ range .Pages }}
-              <div class="pub-list-item view-citation">
-                <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+              <div class="pub-item">
                 
                 {{/* Publication content */}}
-                <div class="media-body">
+                <div class="pub-content">
                   
                   {{/* Title */}}
-                  <div class="section-subheading">
+                  <div class="pub-title">
                     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                   </div>
                   
                   {{/* Authors */}}
-                  <div class="article-metadata">
-                    {{ with .Params.authors }}
-                      <div class="author-notes">
-                        {{ delimit . ", " | markdownify }}
-                      </div>
-                    {{ end }}
-                  </div>
+                  {{ with .Params.authors }}
+                    <div class="pub-authors">
+                      {{ delimit . ", " | markdownify }}
+                    </div>
+                  {{ end }}
                   
                   {{/* Publication info */}}
-                  <div class="article-metadata">
+                  <div class="pub-venue">
                     {{ if .Params.publication }}
-                      <span class="publication-name">
-                        {{ .Params.publication | markdownify }}
-                      </span>
+                      <span class="venue-name">{{ .Params.publication | markdownify }}</span>
                     {{ end }}
-                    
                     {{ if .Date }}
-                      <span class="article-date">
-                        {{ .Date.Format "January 2006" }}
-                      </span>
+                      <span class="pub-date">, {{ .Date.Format "2006" }}</span>
                     {{ end }}
                   </div>
                   
                   {{/* Links */}}
-                  <div class="btn-links">
-                    {{ if .Params.url_pdf }}
-                      <a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ .Params.url_pdf }}" target="_blank" rel="noopener">
-                        <i class="fas fa-file-pdf" aria-hidden="true"></i> PDF
-                      </a>
-                    {{ end }}
-                    
-                    {{ if .Params.url_code }}
-                      <a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ .Params.url_code }}" target="_blank" rel="noopener">
-                        <i class="fas fa-code" aria-hidden="true"></i> Code
-                      </a>
-                    {{ end }}
-                    
-                    {{ if .Params.url_dataset }}
-                      <a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ .Params.url_dataset }}" target="_blank" rel="noopener">
-                        <i class="fas fa-database" aria-hidden="true"></i> Dataset
-                      </a>
-                    {{ end }}
-                    
-                    {{ if .Params.url_project }}
-                      <a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ .Params.url_project }}" target="_blank" rel="noopener">
-                        <i class="fas fa-project-diagram" aria-hidden="true"></i> Project
-                      </a>
-                    {{ end }}
-                  </div>
+                  {{ if or .Params.url_pdf .Params.url_code .Params.url_dataset .Params.url_project }}
+                    <div class="pub-links">
+                      {{ if .Params.url_pdf }}
+                        <a href="{{ .Params.url_pdf }}" target="_blank">[PDF]</a>
+                      {{ end }}
+                      {{ if .Params.url_code }}
+                        <a href="{{ .Params.url_code }}" target="_blank">[Code]</a>
+                      {{ end }}
+                      {{ if .Params.url_dataset }}
+                        <a href="{{ .Params.url_dataset }}" target="_blank">[Dataset]</a>
+                      {{ end }}
+                      {{ if .Params.url_project }}
+                        <a href="{{ .Params.url_project }}" target="_blank">[Project]</a>
+                      {{ end }}
+                    </div>
+                  {{ end }}
                   
                 </div>
               </div>
@@ -94,68 +76,127 @@
 </div>
 
 <style>
-/* Custom styles for year-grouped publications */
-.year-header {
-  color: #2962ff;
-  font-weight: 600;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-.year-divider {
-  border-top: 2px solid #e9ecef;
-  margin-bottom: 2rem;
+/* Clean, compact publications layout */
+.publications-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem 0;
 }
 
 .year-group {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
-.pub-list-item {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1.5rem;
+.year-header {
+  color: #000;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.pub-item {
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
   border-bottom: 1px solid #f0f0f0;
+  text-align: center;
 }
 
-.pub-list-item:last-child {
+.pub-item:last-child {
   border-bottom: none;
 }
 
-.publication-name {
+.pub-content {
+  line-height: 1.4;
+}
+
+.pub-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.pub-title a {
+  color: #000;
+  text-decoration: none;
+}
+
+.pub-title a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+.pub-authors {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+.pub-venue {
+  color: #666;
+  font-size: 0.9rem;
   font-style: italic;
+  margin-bottom: 0.3rem;
+}
+
+.venue-name {
   color: #666;
 }
 
-.article-date {
-  color: #999;
-  font-size: 0.9em;
-  margin-left: 1rem;
+.pub-date {
+  color: #888;
 }
 
-.author-notes {
-  margin-bottom: 0.5rem;
+.pub-links {
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
 }
 
-.btn-links {
-  margin-top: 0.5rem;
+.pub-links a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 0.3rem;
+  border: 1px solid #ccc;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  background-color: #f8f9fa;
 }
 
-.btn-links .btn {
-  margin-right: 0.5rem;
-  margin-bottom: 0.25rem;
+.pub-links a:hover {
+  background-color: #e9ecef;
+  border-color: #aaa;
 }
 
-/* Hide search functionality */
-.search-results {
+/* Hide all icons and search elements */
+.pub-icon,
+.fas,
+.far,
+.search-results,
+.page-search,
+.btn-search {
   display: none !important;
 }
 
-.page-header .page-search {
-  display: none !important;
-}
-
-.article-container .article-header .btn-search {
-  display: none !important;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .publications-container {
+    padding: 0.5rem;
+  }
+  
+  .year-header {
+    font-size: 1.5rem;
+  }
+  
+  .pub-title {
+    font-size: 1rem;
+  }
+  
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.9rem;
+  }
 }
 </style>
 
