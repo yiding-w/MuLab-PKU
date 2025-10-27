@@ -105,6 +105,24 @@ sections:
       title: 'Our Photos'
       subtitle: ''
       slides:
+        - title: Party 2025 Fall
+          align: center
+          background:
+            image:
+              filename: photo3.png
+              filters:
+                brightness: 0.8
+            position: center
+            color: '#1e40af'
+        - title: Lab Meeting 2025
+          align: center
+          background:
+            image:
+              filename: photo4.png
+              filters:
+                brightness: 0.8
+            position: center
+            color: '#1e40af'
         - title: Barbecue 2024
           align: center
           background:
