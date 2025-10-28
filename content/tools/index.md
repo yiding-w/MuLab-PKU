@@ -56,6 +56,20 @@ sections:
             </div>
           </div>
 
+          <!-- Research Tools -->
+          <div style="background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+              <span style="font-size: 2rem; margin-right: 1rem;">🔍</span>
+              <h3 style="color: #1f2937; margin: 0; font-weight: 600; font-size: 1.25rem;">Research Tools</h3>
+            </div>
+            <div style="space-y: 1rem;">
+              <div style="margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #f3f4f6;">
+                <a href="https://asta.allen.ai/discover?redirect_from=paper-finder" target="_blank" rel="noopener noreferrer" style="color: #3b82f6; text-decoration: none; font-weight: 600; font-size: 1rem;">ASTA Paper Finder</a>
+                <p style="color: #6b7280; font-size: 0.9rem; margin: 0.5rem 0 0 0; line-height: 1.5;">A powerful academic search tool by Allen AI that helps you discover relevant papers and track research trends.</p>
+              </div>
+            </div>
+          </div>
+
           <!-- More Tools -->
           <div style="background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
             <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
