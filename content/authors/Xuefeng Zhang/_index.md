@@ -14,7 +14,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Alumni
+role: Alumni · PhD 2022–2026
 
 # Organizations/Affiliations
 organizations:
@@ -29,9 +29,9 @@ interests:
 
 education:
   courses:
-    - course: PhD in Artificial Intelligence (Expected 2027)
+    - course: PhD in Artificial Intelligence (2022–2026)
       institution: Peking University, Institute of Artificial Intelligence
-      year: 2027
+      year: 2026
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons

@@ -14,7 +14,7 @@ authors:
 superuser: false
 
 # Role/position
-role: PhD Student
+role: PhD Student · 2026–2031
 
 # Organizations/Affiliations
 organizations:
@@ -30,7 +30,10 @@ interests:
 
 education:
   courses:
-    - course: B.E. in Artificial Intelligence (Expected 2026)
+    - course: PhD in Artificial Intelligence (2026–2031)
+      institution: Peking University, Institute of Artificial Intelligence
+      year: 2031
+    - course: B.E. in Artificial Intelligence
       institution: Peking University
       year: 2026
 

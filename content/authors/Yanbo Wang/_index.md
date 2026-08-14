@@ -14,7 +14,7 @@ authors:
 superuser: false
 
 # Role/position
-role: PhD Student
+role: PhD Student · 2023–2028
 
 # Organizations/Affiliations
 organizations:
@@ -30,7 +30,7 @@ interests:
 
 education:
   courses:
-    - course: PhD in Artificial Intelligence (Expected 2028)
+    - course: PhD in Artificial Intelligence (2023–2028)
       institution: Peking University, Institute of Artificial Intelligence
       year: 2028
 

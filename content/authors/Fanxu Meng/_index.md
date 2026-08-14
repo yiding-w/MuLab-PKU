@@ -14,7 +14,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Alumni
+role: Alumni · PhD 2022–2026
 
 # Organizations/Affiliations
 organizations:
@@ -30,7 +30,7 @@ interests:
 
 education:
   courses:
-    - course: PhD Student in Artificial Intelligence (Expected 2026)
+    - course: PhD in Artificial Intelligence (2022–2026)
       institution: Peking University
       year: 2026
 

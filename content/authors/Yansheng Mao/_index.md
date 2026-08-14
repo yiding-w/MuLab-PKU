@@ -14,7 +14,7 @@ authors:
 superuser: false
 
 # Role/position
-role: PhD Student
+role: PhD Student · 2026–2031
 
 # Organizations/Affiliations
 organizations:
@@ -31,7 +31,10 @@ interests:
 
 education:
   courses:
-    - course: B.S. in Computer Science, Peking University (Expected 2026)
+    - course: PhD in Artificial Intelligence (2026–2031)
+      institution: Peking University, Institute of Artificial Intelligence
+      year: 2031
+    - course: B.S. in Computer Science
       institution: Peking University, EECS
       year: 2026
 

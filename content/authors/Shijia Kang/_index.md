@@ -14,7 +14,7 @@ authors:
 superuser: false
 
 # Role/position
-role: PhD Students
+role: PhD Student · 2024–2029
 
 # Organizations/Affiliations
 organizations:
@@ -30,7 +30,7 @@ interests:
 
 education:
   courses:
-    - course: PhD Student in Artificial Intelligence (Expected 2029)
+    - course: PhD in Artificial Intelligence (2024–2029)
       institution: Institute of Artificial Intelligence, Peking University
       year: 2029
 
