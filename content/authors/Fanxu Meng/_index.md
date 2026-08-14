@@ -14,7 +14,7 @@ authors:
 superuser: false
 
 # Role/position
-role: PhD Students
+role: Alumni
 
 # Organizations/Affiliations
 organizations:
@@ -62,7 +62,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - PhD Students
+  - Alumni
 ---
 
 I am a fourth-year Ph.D. student at the Institute for Artificial Intelligence, Peking University, where I am advised by Prof. Muhan Zhang. My research focuses on parameter-efficient fine-tuning of large language models (LLMs) and efficient inference for long-context LLMs. I have served as a reviewer for leading conferences and journals, including NeurIPS, ICML, ICLR, TPAMI, COLM, AAAI, and IJCAI.

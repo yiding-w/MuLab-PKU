@@ -14,7 +14,7 @@ authors:
 superuser: false
 
 # Role/position
-role: PhD Students
+role: Alumni
 
 # Organizations/Affiliations
 organizations:
@@ -62,7 +62,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - PhD Students
+  - Alumni
 ---
 
 Haotong is a fourth-year Ph.D. student in the School of Intelligence Science and Technology and the Institute for Artifical Intelligence at Peking University. He is a member of ZeroLab, led by Prof. Zhouchen Lin, and GraphPKU, led by Prof. Muhan Zhang. His research focuses on Large Language Models (LLMs) particularly on enhancing their reasoning ability of LLMs, explanation and interpretation their mechanisms, and exploring multi-modal LLMs. Prior to his graduate studies, Haotong receive his bachelor degree from the School of Mathematical Science at Peking University, where he worked with Prof. Zhanxing Zhu.

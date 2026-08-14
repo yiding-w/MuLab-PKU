@@ -14,7 +14,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Undergraduate Student
+role: PhD Student
 
 # Organizations/Affiliations
 organizations:
@@ -62,7 +62,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Undergraduate Students
+  - PhD Students
 ---
 
 
@@ -72,4 +72,3 @@ In general, my research interests lie in:
 
 1. The revolution leads to the next generation of foundational models.  
 2. Adapting foundation models more effectively to the field of agents, aiming to construct agents with general intelligence（eg. social interaction, adaptive decision-making, long-horizon planning).
-
