@@ -84,6 +84,15 @@ sections:
       subtitle: ''
       text: |
         <div style="font-size: 0.95rem; line-height: 1.8;">
+          <p><strong>5/2/2026:</strong> Six papers accepted at <strong>ICML-26</strong>! Congrats to Yansheng, Yufei, Jiaqi, Fanxu, Haotong, Xiyuan, Yanbo, Yuchen, Xingang, Yewei, Cai and Yi! 🎉</p>
+          <p><strong>4/7/2026:</strong> Five papers accepted at <strong>ACL-26</strong>! Congrats to Pingzhi, Yiding, Fanxu, Yi, Shuyang and Jiaqi! 🎉</p>
+          <p><strong>1/8/2026:</strong> Our paper on atom-level generative foundation models has been accepted at <strong>Cell</strong>! Congrats to Xingang! 🎉</p>
+          <p><strong>12/12/2025:</strong> Gave a talk on <a href="https://arxiv.org/pdf/2505.05568" style="color: #2563eb;"><strong>Griffin</strong></a> at <a href="https://ccf.org.cn/chinadata2025/schedule_d_4022" style="color: #2563eb;">CCF ChinaData 2025</a>.</p>
+          <p><strong>11/30/2025:</strong> Gave a talk on <a href="https://arxiv.org/pdf/2505.05568" style="color: #2563eb;"><strong>Griffin: Towards a Graph-Centric Relational Database Foundation Model</strong></a> at the CCF Data-Centric AI Forum.</p>
+          <p><strong>11/26/2025:</strong> Two papers accepted at <strong>LoG-25</strong>! Congrats to Xiaohui and Yuanshuo! 🎉</p>
+          <p><strong>11/26/2025:</strong> TPLA accepted at <strong>ASPLOS-26</strong>! Congrats to Xiaojuan! 🎉</p>
+          <p><strong>11/12/2025:</strong> Our paper wins the <strong>CIKM-25 Best Full Paper Award</strong>! Congrats to Weishuo, Yanbo and Xiyuan! 🏆</p>
+          <p><strong>10/24/2025:</strong> Gave two talks at <a href="https://ccf.org.cn/cncc2025/schedule_d_4004" style="color: #2563eb;">CNCC 2025</a>: "Graph-Centric Relational Database Foundation Models" and "Large Language Model-Enhanced Graph Foundation Models".</p>
           <p><strong>9/19/2025:</strong> Four papers accepted at <strong>NeurIPS-25</strong>! Congrats to Fanxu, Pingzhi, Juntong, Yi, Shijia and Yanan! 🎉</p>
           <p><strong>9/19/2025:</strong> LooGLEv2 and PHYBench accepted at <strong>NeurIPS-25</strong> Datasets and Benchmarks track! Congrats to Ziyuan, Yuxuan, Jiaqi and Shi! 🎉</p>
           <p><strong>9/15/2025:</strong> HD-PiSSA is accepted at <strong>EMNLP-25</strong> as an <strong>oral</strong> presentation! Congrats to Yiding and Fanxu! 🎉</p>
