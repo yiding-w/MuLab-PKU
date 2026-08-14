@@ -10,7 +10,6 @@
         {{/* Group publications by year */}}
         {{ $publications := where site.RegularPages "Type" "publication" }}
         {{ $publications = $publications.GroupByDate "2006" }}
-        {{ $publications = $publications.Reverse }}
         
         {{/* Display each year group */}}
         {{ range $publications }}

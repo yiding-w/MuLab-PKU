@@ -83,7 +83,7 @@ sections:
       title: Latest News
       subtitle: ''
       text: |
-        <div style="font-size: 0.95rem; line-height: 1.8;">
+        <div style="font-size: 0.95rem; line-height: 1.8; max-height: 420px; overflow-y: auto; padding-right: 1rem; scrollbar-gutter: stable;">
           <p><strong>5/2/2026:</strong> Six papers accepted at <strong>ICML-26</strong>! Congrats to Yansheng, Yufei, Jiaqi, Fanxu, Haotong, Xiyuan, Yanbo, Yuchen, Xingang, Yewei, Cai and Yi! 🎉</p>
           <p><strong>4/7/2026:</strong> Five papers accepted at <strong>ACL-26</strong>! Congrats to Pingzhi, Yiding, Fanxu, Yi, Shuyang and Jiaqi! 🎉</p>
           <p><strong>1/8/2026:</strong> Our paper on atom-level generative foundation models has been accepted at <strong>Cell</strong>! Congrats to Xingang! 🎉</p>
