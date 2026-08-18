@@ -1,8 +1,8 @@
 ---
 title: 'HISA: Efficient Hierarchical Indexing for Fine-Grained Sparse Attention'
 authors: [Y. Xu, F. Meng, F. Jiang, Y. Wang, R. Zhou, Z. Wang, J. Wu, Z. Pan, X. Tang, W. Pei, T. Liu, D. Yin, X. Sun, M. Zhang]
-date: '2026-10-06T00:00:00Z'
-publishDate: '2026-10-06T00:00:00Z'
+date: '2026-07-08T00:00:00Z'
+publishDate: '2026-07-08T00:00:00Z'
 publication_types: ['paper-conference']
 publication: 'Proc. Conference on Language Modeling (COLM-26)'
 publication_short: 'COLM-26'

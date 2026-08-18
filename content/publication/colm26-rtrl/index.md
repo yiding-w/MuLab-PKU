@@ -1,8 +1,8 @@
 ---
 title: 'Round-trip Reinforcement Learning: Self-Consistent Training for Better Chemical LLMs'
 authors: [L. Kong, X. Wang, Y. Chen, M. Zhang]
-date: '2026-10-06T00:00:00Z'
-publishDate: '2026-10-06T00:00:00Z'
+date: '2026-07-08T00:00:00Z'
+publishDate: '2026-07-08T00:00:00Z'
 publication_types: ['paper-conference']
 publication: 'Proc. Conference on Language Modeling (COLM-26)'
 publication_short: 'COLM-26'
