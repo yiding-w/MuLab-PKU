@@ -84,6 +84,7 @@ sections:
       subtitle: ''
       text: |
         <div style="font-size: 0.95rem; line-height: 1.8; max-height: 420px; overflow-y: auto; padding-right: 1rem; scrollbar-gutter: stable;">
+          <p><strong>9/25/2026:</strong> Six papers accepted at <strong>NeurIPS-26</strong>! Congrats to Shaoheng, Zian, Cai, Xinyuan, Xuejie, Xiyuan, Donghong, Jiarui and Yanbo! 🎉</p>
           <p><strong>7/8/2026:</strong> Two papers accepted at <strong>COLM-26</strong>! Congrats to Yufei, Fanxu, Fan Jiang, Yuxuan, Zhaohui, Xiaojuan, Lecheng and Xiyuan! 🎉</p>
           <p><strong>5/2/2026:</strong> Six papers accepted at <strong>ICML-26</strong>! Congrats to Yansheng, Yufei, Jiaqi, Fanxu, Haotong, Xiyuan, Yanbo, Yuchen, Xingang, Yewei, Cai and Yi! 🎉</p>
           <p><strong>4/7/2026:</strong> Five papers accepted at <strong>ACL-26</strong>! Congrats to Pingzhi, Yiding, Fanxu, Yi, Shuyang and Jiaqi! 🎉</p>
