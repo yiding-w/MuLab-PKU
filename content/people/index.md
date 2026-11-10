@@ -13,6 +13,7 @@ sections:
       user_groups:
           - Faculty
           - PhD Students
+          - Master's Students
           - Undergraduate Students
           - Alumni
       sort_by: Params.last_name
